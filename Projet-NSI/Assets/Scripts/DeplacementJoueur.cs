@@ -6,11 +6,12 @@ public class DeplacementJoueur : MonoBehaviour
 {
     private float horizontalInput;
     private float verticalInput;
-    private float[] speed =  {0.05f, 0.05f, 5f};
+    private float[] speed =  {0.5f, 0.5f, 5f};
+    private Rigidbody rb;
     // Start is called before the first frame update
     void Start()
     {
-
+        rb = GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
@@ -21,8 +22,14 @@ public class DeplacementJoueur : MonoBehaviour
         verticalInput = Input.GetAxis("Vertical");
 
         // Le joueur avance en fonction des inputs horizontaux et verticaux
-        transform.Translate(Vector3.right * horizontalInput * speed[0]);
-        transform.Translate(Vector3.forward * verticalInput * speed[1]);
+        if (horizontalInput != 0)
+        {
+            rb.AddForce(Vector3.right * horizontalInput * speed[0], ForceMode.Impulse);
+        }
+        if (verticalInput != 0)
+        {
+            rb.AddForce(Vector3.forward * verticalInput * speed[1], ForceMode.Impulse);
+        }
 
         // La touche espace (space) pour sauter 
         if (Input.GetKeyDown(KeyCode.Space))
