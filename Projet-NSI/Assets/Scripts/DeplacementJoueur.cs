@@ -13,16 +13,6 @@ public class DeplacementJoueur : MonoBehaviour
 
     }
 
-    void OnCollisionEnter(Collision col)
-    {
-        Debug.Log(col.relativeVelocity);
-    }
-
-    void PreUpdate()
-    {
-    
-    }
-
     // Update is called once per frame
     void Update()
     {
