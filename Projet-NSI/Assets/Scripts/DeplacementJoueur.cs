@@ -20,7 +20,6 @@ public class DeplacementJoueur : MonoBehaviour
     void Update()
     {
         // Input vertical et horizontal correspond aux flèches du clavier
-        horizontalInput = 
         transform.Translate(Vector3.right*horizontalInput*Time.deltaTime);
         verticalInput = Input.GetAxis("Vertical");
 
