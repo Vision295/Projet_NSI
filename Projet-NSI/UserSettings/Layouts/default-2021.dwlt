@@ -51,6 +51,7 @@ MonoBehaviour:
   vertical: 0
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   controlID: 86
 =======
     height: 723
@@ -59,6 +60,9 @@ MonoBehaviour:
   vertical: 0
   controlID: 42
 >>>>>>> parent of b756fea (animtion)
+=======
+  controlID: 16
+>>>>>>> ef00093730b0efd55bbbbfab2abecaf686f5acd6
 =======
   controlID: 16
 >>>>>>> ef00093730b0efd55bbbbfab2abecaf686f5acd6
@@ -87,11 +91,16 @@ MonoBehaviour:
     height: 740
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     height: 723
 >>>>>>> parent of b756fea (animtion)
   m_MinSize: {x: 276, y: 71}
   m_MaxSize: {x: 4001, y: 4021}
+=======
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
+>>>>>>> ef00093730b0efd55bbbbfab2abecaf686f5acd6
 =======
   m_MinSize: {x: 275, y: 50}
   m_MaxSize: {x: 4000, y: 4000}
@@ -125,6 +134,7 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     width: 289.6
     height: 466.4
 =======
@@ -136,11 +146,16 @@ MonoBehaviour:
 =======
 =======
 >>>>>>> ef00093730b0efd55bbbbfab2abecaf686f5acd6
+=======
+>>>>>>> ef00093730b0efd55bbbbfab2abecaf686f5acd6
     width: 290
     height: 438
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 4000, y: 4000}
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> ef00093730b0efd55bbbbfab2abecaf686f5acd6
+=======
 >>>>>>> ef00093730b0efd55bbbbfab2abecaf686f5acd6
 =======
 >>>>>>> ef00093730b0efd55bbbbfab2abecaf686f5acd6
@@ -168,6 +183,7 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     y: 466.4
     width: 1173
     height: 273.6
@@ -176,6 +192,11 @@ MonoBehaviour:
     width: 1173
     height: 295
 >>>>>>> parent of b756fea (animtion)
+=======
+    y: 438
+    width: 1173
+    height: 302
+>>>>>>> ef00093730b0efd55bbbbfab2abecaf686f5acd6
 =======
     y: 438
     width: 1173
@@ -300,6 +321,7 @@ MonoBehaviour:
   vertical: 1
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   controlID: 87
 =======
     height: 723
@@ -308,6 +330,9 @@ MonoBehaviour:
   vertical: 1
   controlID: 43
 >>>>>>> parent of b756fea (animtion)
+=======
+  controlID: 17
+>>>>>>> ef00093730b0efd55bbbbfab2abecaf686f5acd6
 =======
   controlID: 17
 >>>>>>> ef00093730b0efd55bbbbfab2abecaf686f5acd6
@@ -337,6 +362,7 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     height: 466.4
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
@@ -349,6 +375,13 @@ MonoBehaviour:
   vertical: 0
   controlID: 44
 >>>>>>> parent of b756fea (animtion)
+=======
+    height: 438
+  m_MinSize: {x: 200, y: 100}
+  m_MaxSize: {x: 16192, y: 8096}
+  vertical: 0
+  controlID: 18
+>>>>>>> ef00093730b0efd55bbbbfab2abecaf686f5acd6
 =======
     height: 438
   m_MinSize: {x: 200, y: 100}
@@ -381,6 +414,7 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 289.6
     y: 0
     width: 883.4
@@ -391,6 +425,12 @@ MonoBehaviour:
     width: 883
     height: 428
 >>>>>>> parent of b756fea (animtion)
+=======
+    x: 290
+    y: 0
+    width: 883
+    height: 438
+>>>>>>> ef00093730b0efd55bbbbfab2abecaf686f5acd6
 =======
     x: 290
     y: 0
@@ -435,6 +475,7 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     y: 540
     width: 1172
     height: 252.6
@@ -443,6 +484,11 @@ MonoBehaviour:
     width: 1172
     height: 274
 >>>>>>> parent of b756fea (animtion)
+=======
+    y: 511.2
+    width: 1172
+    height: 281
+>>>>>>> ef00093730b0efd55bbbbfab2abecaf686f5acd6
 =======
     y: 511.2
     width: 1172
@@ -478,8 +524,12 @@ MonoBehaviour:
   m_LastFolders:
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   - Assets/Scripts
 <<<<<<< HEAD
+=======
+  - Assets/Prefabs
+>>>>>>> ef00093730b0efd55bbbbfab2abecaf686f5acd6
 =======
   - Assets/Prefabs
 >>>>>>> ef00093730b0efd55bbbbfab2abecaf686f5acd6
@@ -499,6 +549,7 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_SelectedIDs: 644b0000
     m_LastClickedID: 19300
     m_ExpandedIDs: 00000000564b000000ca9a3b
@@ -507,6 +558,11 @@ MonoBehaviour:
     m_LastClickedID: 19242
     m_ExpandedIDs: 000000001c4b000000ca9a3bffffff7f
 >>>>>>> parent of b756fea (animtion)
+=======
+    m_SelectedIDs: 464b0000
+    m_LastClickedID: 19270
+    m_ExpandedIDs: 000000003c4b000000ca9a3b
+>>>>>>> ef00093730b0efd55bbbbfab2abecaf686f5acd6
 =======
     m_SelectedIDs: 464b0000
     m_LastClickedID: 19270
@@ -547,10 +603,14 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_ExpandedIDs: 00000000564b0000
 =======
     m_ExpandedIDs: 000000001c4b0000
 >>>>>>> parent of b756fea (animtion)
+=======
+    m_ExpandedIDs: 000000003c4b0000
+>>>>>>> ef00093730b0efd55bbbbfab2abecaf686f5acd6
 =======
     m_ExpandedIDs: 000000003c4b0000
 >>>>>>> ef00093730b0efd55bbbbfab2abecaf686f5acd6
@@ -682,12 +742,17 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     width: 288.6
     height: 445.4
 =======
     width: 289
     height: 407
 >>>>>>> parent of b756fea (animtion)
+=======
+    width: 289
+    height: 417
+>>>>>>> ef00093730b0efd55bbbbfab2abecaf686f5acd6
 =======
     width: 289
     height: 417
@@ -708,10 +773,14 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       m_ExpandedIDs: 30eeffffd2eeffff02f1ffff38fbffff
 =======
       m_ExpandedIDs: f2f8ffffe4f9ffff38fbffff
 >>>>>>> parent of b756fea (animtion)
+=======
+      m_ExpandedIDs: eaf8ffff38fbffff
+>>>>>>> ef00093730b0efd55bbbbfab2abecaf686f5acd6
 =======
       m_ExpandedIDs: eaf8ffff38fbffff
 >>>>>>> ef00093730b0efd55bbbbfab2abecaf686f5acd6
@@ -766,12 +835,17 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     width: 881.4
     height: 445.4
 =======
     width: 881
     height: 407
 >>>>>>> parent of b756fea (animtion)
+=======
+    width: 881
+    height: 417
+>>>>>>> ef00093730b0efd55bbbbfab2abecaf686f5acd6
 =======
     width: 881
     height: 417
@@ -984,10 +1058,14 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_Target: {x: 1.3511115, y: -0.07451677, z: -0.3140421}
 =======
     m_Target: {x: 1.2996396, y: 1.5772176, z: -1.5180025}
 >>>>>>> parent of b756fea (animtion)
+=======
+    m_Target: {x: 20, y: 3, z: 0}
+>>>>>>> ef00093730b0efd55bbbbfab2abecaf686f5acd6
 =======
     m_Target: {x: 20, y: 3, z: 0}
 >>>>>>> ef00093730b0efd55bbbbfab2abecaf686f5acd6
@@ -1045,6 +1123,7 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_Target: {x: 0.2090275, y: 0.4910492, z: -0.12267007, w: 0.8367466}
 =======
     m_Target: {x: 0.22975294, y: 0, z: 0, w: 0.973249}
@@ -1066,6 +1145,15 @@ MonoBehaviour:
     m_Value: 5.7549357
 >>>>>>> parent of b756fea (animtion)
 =======
+    m_Target: 4.2720017
+    speed: 2
+    m_Value: 4.2720017
+>>>>>>> ef00093730b0efd55bbbbfab2abecaf686f5acd6
+=======
+    m_Target: {x: 0.098634474, y: -0.10013592, z: 0.009974889, w: 0.99002767}
+    speed: 2
+    m_Value: {x: 0.09863397, y: -0.10013541, z: 0.009974838, w: 0.9900226}
+  m_Size:
     m_Target: 4.2720017
     speed: 2
     m_Value: 4.2720017
