@@ -6,7 +6,7 @@ public class CollisionJoueur : MonoBehaviour
 {
     private GameObject cam;
     private GestionCamera2 scriptCam;
-    private Vector3 offset = new Vector3(0, 2, -5);
+    private Vector3 offset = new Vector3(0, 5, -5);
     private Vector3 rotationV;
     // Start is called before the first frame update
     void Start()
@@ -17,12 +17,17 @@ public class CollisionJoueur : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        // l'angle 
-        if(other.tag == "cameraCheckpoint")
+        if (other.tag == "cameraCheckpoint1")
         {
             scriptCam.position = other.transform.position + offset;
             rotationV = new Vector3(cam.transform.rotation.x, cam.transform.rotation.y, cam.transform.rotation.z);
-            scriptCam.rotation = Quaternion.FromToRotation(rotationV, new Vector3(180, 180, 30));
+            scriptCam.rotation = new Vector3(20, 0, 0);
+
+        } else if (other.tag == "cameraCheckpoint2")
+        {
+            scriptCam.position = other.transform.position + new Vector3(5, 5, 0);
+            rotationV = new Vector3(cam.transform.rotation.x, cam.transform.rotation.y, cam.transform.rotation.z);
+            scriptCam.rotation = new Vector3(20, -90, 0);
         }
     }
 

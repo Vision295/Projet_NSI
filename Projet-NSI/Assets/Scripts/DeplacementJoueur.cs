@@ -6,7 +6,7 @@ public class DeplacementJoueur : MonoBehaviour
 {
     private float horizontalInput;
     private float verticalInput;
-    private float[] speed =  {0.5f, 0.5f, 5f};
+    private float[] speed =  {0.5f, 0.5f, 7f};
     private Rigidbody rb;
     private bool isGrounded;
     private bool inputJump;
@@ -20,17 +20,19 @@ public class DeplacementJoueur : MonoBehaviour
     void Update()
     {
         // Input vertical et horizontal correspond aux flèches du clavier
-        transform.Translate(Vector3.right*horizontalInput*Time.deltaTime);
+        horizontalInput = Input.GetAxis("Horizontal");
         verticalInput = Input.GetAxis("Vertical");
 
         // Le joueur avance en fonction des inputs horizontaux et verticaux
         if (horizontalInput != 0)
         {
             rb.AddForce(Vector3.right * horizontalInput * speed[0], ForceMode.Impulse);
+            horizontalInput = 0;
         }
         if (verticalInput != 0)
         {
             rb.AddForce(Vector3.forward * verticalInput * speed[1], ForceMode.Impulse);
+            verticalInput = 0;
         }
 
         // La touche espace (space) pour sauter 
@@ -38,20 +40,13 @@ public class DeplacementJoueur : MonoBehaviour
         {
             inputJump = Input.GetKeyDown(KeyCode.Space);
         }
-    }
 
-    void FixeUptdate()
-    {
         if (inputJump && isGrounded)
         {
-            rb.AddForce(Vector3.up*5, ForceMode.Impulse);
+            rb.AddForce(Vector3.up * speed[2], ForceMode.Impulse);
             inputJump = false;
             isGrounded = false;
         }
-        if (horizontalInput != 0)
-        {
-            rb.AddForce(Vector3.right *horizontalInput *10, ForceMode.Acceleration);
-        }  
     }
     void OnCollisionExit(Collision other)
     {
