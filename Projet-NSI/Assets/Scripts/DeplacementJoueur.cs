@@ -8,6 +8,8 @@ public class DeplacementJoueur : MonoBehaviour
     private float verticalInput;
     private float[] speed =  {0.5f, 0.5f, 5f};
     private Rigidbody rb;
+    private bool isGrounded;
+    private bool inputJump;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,7 +20,8 @@ public class DeplacementJoueur : MonoBehaviour
     void Update()
     {
         // Input vertical et horizontal correspond aux flèches du clavier
-        horizontalInput = Input.GetAxis("Horizontal");
+        horizontalInput = 
+        transform.Translate(Vector3.right*horizontalInput*Time.deltaTime);
         verticalInput = Input.GetAxis("Vertical");
 
         // Le joueur avance en fonction des inputs horizontaux et verticaux
@@ -32,9 +35,31 @@ public class DeplacementJoueur : MonoBehaviour
         }
 
         // La touche espace (space) pour sauter 
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (!inputJump && isGrounded)
         {
-            transform.Translate(Vector3.up * speed[2]);
+            inputJump = Input.GetKeyDown(KeyCode.Space);
         }
+    }
+
+    void FixeUptdate()
+    {
+        if (inputJump && isGrounded)
+        {
+            rb.AddForce(Vector3.up*5, ForceMode.Impulse);
+            inputJump = false;
+            isGrounded = false;
+        }
+        if (horizontalInput != 0)
+        {
+            rb.AddForce(Vector3.right *horizontalInput *10, ForceMode.Acceleration);
+        }  
+    }
+    void OnCollisionExit(Collision other)
+    {
+        isGrounded = false;
+    }
+    void OnCollisionEnter(Collision other) 
+    {
+        isGrounded = true;
     }
 }
