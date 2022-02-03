@@ -16,9 +16,11 @@ public class CollisionJoueur : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
+        // l'angle 
         if(other.tag == "cameraCheckpoint")
         {
             scriptCam.position = other.transform.position + offset;
+            scriptCam.rotation = new Quaternion(0, 0, 0, 0);
         }
     }
 
