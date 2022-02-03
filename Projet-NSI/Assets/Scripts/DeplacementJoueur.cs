@@ -8,8 +8,6 @@ public class DeplacementJoueur : MonoBehaviour
     private float verticalInput;
     private float[] speed =  {0.5f, 0.5f, 5f};
     private Rigidbody rb;
-    private bool inputJump; 
-    private bool isGrounded; 
     // Start is called before the first frame update
     void Start()
     {
@@ -34,32 +32,9 @@ public class DeplacementJoueur : MonoBehaviour
         }
 
         // La touche espace (space) pour sauter 
-        if (!inputJump) 
+        if (Input.GetKeyDown(KeyCode.Space))
         {
-            inputJump = Input.GetKeyDown(KeyCode.Space);
+            transform.Translate(Vector3.up * speed[2]);
         }
-    }
-    void FixedUpdate ()
-    {
-        if (inputJump && isGrounded)
-        {
-            rb.AddForce(Vector3.up*5, ForceMode.Impulse);
-            inputJump = false;
-            isGrounded = false;
-        }
-        if (horizontalInput !=0 )
-        {
-            rb.AddForce(Vector3.right*horizontalInput*10, ForceMode.Acceleration);
-        }
-    }
-
-    void OnCollisionExit(Collision other) 
-    {
-        isGrounded = false;
-    }
-
-    void OnCollisionEnter(Collision other) 
-    {
-        isGrounded = true;
     }
 }
