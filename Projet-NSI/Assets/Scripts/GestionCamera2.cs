@@ -5,6 +5,7 @@ using UnityEngine;
 public class GestionCamera2 : MonoBehaviour
 {
     public GameObject player;
+    public Vector3 position = new Vector3(0, 2, -5);
 
     // Start is called before the first frame update
     void Start()
@@ -15,13 +16,6 @@ public class GestionCamera2 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (player.transform.position.x < 10)
-        {
-            transform.position = new Vector3(0, 5, -5);
-        }
-        else if (player.transform.position.x > 10)
-        {
-            transform.position = new Vector3(15, 5, -5);
-        }
+        transform.position = position;
     }
 }
