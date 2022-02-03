@@ -98,7 +98,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a3a245c5a69c4a54ea808294644439cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 6582254411259195908, guid: 22f57c37cc14f994b96078d462d77833, type: 3}
+  player: {fileID: 0}
 --- !u!114 &7120096776034964180
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -111,6 +111,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a9afcb74304c6f4c9629881637f3644, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 6582254411259195908, guid: 22f57c37cc14f994b96078d462d77833, type: 3}
+  player: {fileID: 0}
   position: {x: 0, y: 10, z: -10}
   rotation: {x: 0, y: 20, z: 0, w: 0}
