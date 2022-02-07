@@ -10,6 +10,7 @@ public class DeplacementJoueur : MonoBehaviour
     private Rigidbody rb;
     private bool isGrounded;
     private bool inputJump;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -38,10 +39,11 @@ public class DeplacementJoueur : MonoBehaviour
 
         if (inputJump && isGrounded)
         {
-            rb.AddForce(Vector3.up * speed[2]);
+            rb.AddForce(Vector3.up * speed[2], ForceMode.VelocityChange);
             inputJump = false;
             isGrounded = false;
         }
+
     }
     void OnCollisionExit(Collision other)
     {
@@ -51,4 +53,5 @@ public class DeplacementJoueur : MonoBehaviour
     {
         isGrounded = true;
     }
+
 }
