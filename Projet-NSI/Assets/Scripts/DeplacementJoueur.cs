@@ -29,7 +29,7 @@ public class DeplacementJoueur : MonoBehaviour
         cc.SimpleMove(Vector3.forward * verticalInput * Time.deltaTime * speed[0] 
         + Vector3.right * horizontalInput * Time.deltaTime * speed[1]);
         // cc.SimpleMove(Vector3.right * horizontalInput * Time.deltaTime);
-        transform.Rotate(0, horizontalInput * Time.deltaTime, 0);
+        // transform.Rotate(0, horizontalInput * Time.deltaTime, 0);
 
         // La touche espace (space) pour sauter 
         if (!inputJump && isGrounded)
