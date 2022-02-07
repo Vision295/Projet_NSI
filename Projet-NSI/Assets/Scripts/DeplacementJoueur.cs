@@ -6,53 +6,43 @@ public class DeplacementJoueur : MonoBehaviour
 {
     private float horizontalInput;
     private float verticalInput;
-    private float[] speed =  {0.5f, 0.5f, 5f};
-    private Rigidbody rb;
+    private float[] speed =  {500f, 500f, 700f};
+    private CharacterController cc;
     private bool isGrounded;
     private bool inputJump;
     // Start is called before the first frame update
     void Start()
     {
-        rb = GetComponent<Rigidbody>();
+        cc = GetComponent<CharacterController>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        // regarde cette vidéo : https://www.youtube.com/watch?v=UUJMGQTT5ts&ab_channel=iHeartGameDev
+
         // Input vertical et horizontal correspond aux flèches du clavier
-        horizontalInput = 
-        transform.Translate(Vector3.right*horizontalInput*Time.deltaTime);
+        horizontalInput = Input.GetAxis("Horizontal");
         verticalInput = Input.GetAxis("Vertical");
 
         // Le joueur avance en fonction des inputs horizontaux et verticaux
-        if (horizontalInput != 0)
-        {
-            rb.AddForce(Vector3.right * horizontalInput * speed[0], ForceMode.Impulse);
-        }
-        if (verticalInput != 0)
-        {
-            rb.AddForce(Vector3.forward * verticalInput * speed[1], ForceMode.Impulse);
-        }
+        cc.SimpleMove(Vector3.forward * verticalInput * Time.deltaTime * speed[0] 
+        + Vector3.right * horizontalInput * Time.deltaTime * speed[1]);
+        // cc.SimpleMove(Vector3.right * horizontalInput * Time.deltaTime);
+        transform.Rotate(0, horizontalInput * Time.deltaTime, 0);
 
         // La touche espace (space) pour sauter 
         if (!inputJump && isGrounded)
         {
             inputJump = Input.GetKeyDown(KeyCode.Space);
         }
-    }
 
-    void FixeUptdate()
-    {
         if (inputJump && isGrounded)
         {
-            rb.AddForce(Vector3.up*5, ForceMode.Impulse);
+            cc.Move(Vector3.up * speed[2]);
             inputJump = false;
             isGrounded = false;
         }
-        if (horizontalInput != 0)
-        {
-            rb.AddForce(Vector3.right *horizontalInput *10, ForceMode.Acceleration);
-        }  
     }
     void OnCollisionExit(Collision other)
     {
