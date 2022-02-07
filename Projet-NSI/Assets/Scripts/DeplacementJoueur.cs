@@ -7,7 +7,7 @@ public class DeplacementJoueur : MonoBehaviour
     private float horizontalInput, verticalInput;
     private float[] speed =  {5f, 5f, 3.5f};
     private CharacterController cc;
-    private bool isGrounded, inputJump;
+    private bool inputJump;
     private Vector3 mouvement;
     private float gravity = 9.18f, directionY; 
     
@@ -31,24 +31,15 @@ public class DeplacementJoueur : MonoBehaviour
         // transform.Rotate(0, horizontalInput * Time.deltaTime, 0);
 
         // La touche espace (space) pour sauter 
-        // teser le cc.isGrounded !!!!!!
         inputJump = Input.GetKeyDown(KeyCode.Space);
         
-        if (inputJump)
+        if (inputJump && cc.isGrounded)
         {
             directionY = speed[2];
         }
+
         directionY -= gravity * Time.deltaTime;
         mouvement.y = directionY;
-        Debug.Log(mouvement.y);
         cc.Move(mouvement * Time.deltaTime * 5f);
-    }
-    void OnCollisionExit(Collision other)
-    {
-        isGrounded = false;
-    }
-    void OnCollisionEnter(Collision other) 
-    {
-        isGrounded = true;
     }
 }
