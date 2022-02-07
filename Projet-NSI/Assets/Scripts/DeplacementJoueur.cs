@@ -6,7 +6,7 @@ public class DeplacementJoueur : MonoBehaviour
 {
     private float horizontalInput;
     private float verticalInput;
-    private float[] speed =  {500f, 500f, 700f};
+    private float[] speed =  {500f, 500f, 7f};
     private CharacterController cc;
     private bool isGrounded;
     private bool inputJump;
