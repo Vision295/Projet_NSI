@@ -4,9 +4,7 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - cameraCheckpoint2
-  - cameraCheckpoint3
-  - cameraCheckpoint1
+  - cameraCheckpoint
   layers:
   - Default
   - TransparentFX
