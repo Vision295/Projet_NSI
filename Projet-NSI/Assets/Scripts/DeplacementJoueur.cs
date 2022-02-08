@@ -4,16 +4,17 @@ using UnityEngine;
 
 public class DeplacementJoueur : MonoBehaviour
 {
-    private float horizontalInput;
-    private float verticalInput;
-    private float[] speed =  {5f, 5f, 7f};
-    private Rigidbody rb;
-    private bool isGrounded;
+    private float horizontalInput, verticalInput;
+    private float[] speed =  {5f, 5f, 3.5f};
+    private CharacterController cc;
     private bool inputJump;
+    private Vector3 mouvement;
+    private float gravity = 9.18f, directionY; 
+    
     // Start is called before the first frame update
     void Start()
     {
-        rb = GetComponent<Rigidbody>();
+        cc = GetComponent<CharacterController>();
     }
 
     // Update is called once per frame
@@ -26,29 +27,20 @@ public class DeplacementJoueur : MonoBehaviour
         verticalInput = Input.GetAxis("Vertical");
 
         // Le joueur avance en fonction des inputs horizontaux et verticaux
-        rb.AddForce(Vector3.forward * verticalInput * speed[0]);
-        rb.AddForce(Vector3.right * horizontalInput * speed[1]);
+        mouvement = new Vector3(horizontalInput, 0, verticalInput);
         // transform.Rotate(0, horizontalInput * Time.deltaTime, 0);
 
         // La touche espace (space) pour sauter 
-        if (!inputJump && isGrounded)
+        inputJump = Input.GetKeyDown(KeyCode.Space);
+        
+        if (inputJump && cc.isGrounded)
         {
-            inputJump = Input.GetKeyDown(KeyCode.Space);
+            directionY = speed[2];
         }
+        
+        directionY -= gravity * Time.deltaTime;
+        mouvement.y = directionY;
+        cc.Move(mouvement * Time.deltaTime * 5f);
+    }
 
-        if (inputJump && isGrounded)
-        {
-            rb.AddForce(Vector3.up * speed[2]);
-            inputJump = false;
-            isGrounded = false;
-        }
-    }
-    void OnCollisionExit(Collision other)
-    {
-        isGrounded = false;
-    }
-    void OnCollisionEnter(Collision other) 
-    {
-        isGrounded = true;
-    }
 }
