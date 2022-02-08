@@ -6,12 +6,12 @@ public class GestionCamera1 : MonoBehaviour
 {
     public GameObject player;
     public Vector3 offset;
-    private float xmouse, ymouse;
+    private float xmouse, ymouse = 25f;
 
     // Start is called before the first frame update
     void Start()
     {
-        offset = new Vector3(0, 2, -5);
+        offset = new Vector3(0, 5, -5);
     }
 
     // Update is called once per frame
