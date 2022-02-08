@@ -16,9 +16,10 @@ public class DestructionObjet : MonoBehaviour
         
     }
 
-    void OnCollisionEnter(Collider other)
+    void OnTriggerEnter(Collider other)
     {
         Destroy(gameObject);
+        Debug.Log("trest");
     }
 
 }
