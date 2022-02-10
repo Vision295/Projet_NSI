@@ -5,16 +5,16 @@ using UnityEngine;
 public class DeplacementJoueur : MonoBehaviour
 {
     private float horizontalInput, verticalInput;
-    private float[] speed =  {5f, 5f, 3.5f};
-    private CharacterController cc;
+    public float[] speed =  {100f, 300f};
+    private Rigidbody rb;
     private bool inputJump;
     private Vector3 mouvement;
-    private float gravity = 9.18f, directionY; 
+    private Vector3 rotation;
     
     // Start is called before the first frame update
     void Start()
     {
-        cc = GetComponent<CharacterController>();
+        rb = GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
@@ -28,19 +28,15 @@ public class DeplacementJoueur : MonoBehaviour
 
         // Le joueur avance en fonction des inputs horizontaux et verticaux
         mouvement = new Vector3(horizontalInput, 0, verticalInput);
-        // transform.Rotate(0, horizontalInput * Time.deltaTime, 0);
+        rb.AddRelativeForce(mouvement * speed[0] - rb.velocity, ForceMode.Force);
 
         // La touche espace (space) pour sauter 
         inputJump = Input.GetKeyDown(KeyCode.Space);
         
-        if (inputJump && cc.isGrounded)
+        if (inputJump)
         {
-            directionY = speed[2];
+            rb.AddForce(Vector3.up * speed[1], ForceMode.Impulse);
         }
-        
-        directionY -= gravity * Time.deltaTime;
-        mouvement.y = directionY;
-        cc.Move(mouvement * Time.deltaTime * 5f);
     }
 
 }
