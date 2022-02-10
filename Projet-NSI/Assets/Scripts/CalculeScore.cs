@@ -25,10 +25,13 @@ public class CalculeScore : MonoBehaviour
         {
             score += 1;
         }
+<<<<<<< HEAD
 
         if (other.tag == "BonusVitesse")
         {
             DJ.speed[0] *= 2;
         }
+=======
+>>>>>>> 34d09fb08d6e286f8a243a9381e03cc71158e395
     }
 }
