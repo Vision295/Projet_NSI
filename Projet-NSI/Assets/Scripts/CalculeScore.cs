@@ -24,5 +24,6 @@ public class CalculeScore : MonoBehaviour
         {
             score += 1;
         }
+
     }
 }
