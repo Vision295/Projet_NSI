@@ -758,7 +758,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 6582254411259195908, guid: 22f57c37cc14f994b96078d462d77833, type: 3}
   m_PrefabInstance: {fileID: 6582254411778529497}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< HEAD
 --- !u!114 &1430863487
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -830,8 +829,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5bf00b6411e8e384cbaf75847c9d4198, type: 3}
-=======
->>>>>>> 34d09fb08d6e286f8a243a9381e03cc71158e395
 --- !u!1001 &1507142825
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1553,10 +1550,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4717235448009723580, guid: 22f57c37cc14f994b96078d462d77833, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6582254411259195908, guid: 22f57c37cc14f994b96078d462d77833, type: 3}
       propertyPath: m_Name
       value: Joueur
@@ -1605,23 +1598,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6582254411259195963, guid: 22f57c37cc14f994b96078d462d77833, type: 3}
-      propertyPath: speed.Array.data[0]
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 6582254411259195963, guid: 22f57c37cc14f994b96078d462d77833, type: 3}
-      propertyPath: speed.Array.data[1]
-      value: 16
-      objectReference: {fileID: 0}
-    - target: {fileID: 9121980740740106220, guid: 22f57c37cc14f994b96078d462d77833, type: 3}
-      propertyPath: m_Drag
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9121980740740106220, guid: 22f57c37cc14f994b96078d462d77833, type: 3}
-      propertyPath: m_Mass
-      value: 70
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6582254411259195964, guid: 22f57c37cc14f994b96078d462d77833, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 22f57c37cc14f994b96078d462d77833, type: 3}
 --- !u!1001 &7119737045061589218
 PrefabInstance:
