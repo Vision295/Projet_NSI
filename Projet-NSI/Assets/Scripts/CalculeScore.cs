@@ -5,6 +5,7 @@ using UnityEngine;
 public class CalculeScore : MonoBehaviour
 {
     public int score = 0;
+    public DeplacementJoueur DJ;
 
     // Start is called before the first frame update
     void Start()
@@ -25,5 +26,9 @@ public class CalculeScore : MonoBehaviour
             score += 1;
         }
 
+        if (other.tag == "BonusVitesse")
+        {
+            DJ.speed[0] *= 2;
+        }
     }
 }
