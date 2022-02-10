@@ -11,11 +11,13 @@ public class DeplacementJoueur : MonoBehaviour
     private Vector3 mouvement;
     private Vector3 rotation;
     private bool isGrounded = true;
+    private float mass;
     
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        mass = rb.mass;
     }
 
     // Update is called once per frame
@@ -29,18 +31,18 @@ public class DeplacementJoueur : MonoBehaviour
 
         // Le joueur avance en fonction des inputs horizontaux et verticaux
         mouvement = new Vector3(horizontalInput, 0, verticalInput);
-        rb.AddRelativeForce(mouvement * speed[0] - rb.velocity * 70, ForceMode.Force);
+        rb.AddRelativeForce((mouvement * speed[0] - rb.velocity) * mass, ForceMode.Force);
 
         // La touche espace (space) pour sauter 
         inputJump = Input.GetKeyDown(KeyCode.Space);
         
         if (inputJump && isGrounded)
         {
-            rb.AddForce(Vector3.up * speed[1], ForceMode.Impulse);
+            rb.AddForce(Vector3.up * speed[1] * mass, ForceMode.Impulse);
         }
         if (!isGrounded)
         {
-            rb.AddForce(Vector3.down * speed[1] * 0.5f, ForceMode.Force);
+            rb.AddForce(Vector3.down * speed[1] * 0.5f * mass, ForceMode.Force);
         }
     }
     void OnCollisionStay(Collision other)
