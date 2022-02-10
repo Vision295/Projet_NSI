@@ -33,7 +33,7 @@ public class DeplacementJoueur : MonoBehaviour
 
         // La touche espace (space) pour sauter 
         inputJump = Input.GetKeyDown(KeyCode.Space);
-        
+
         if (inputJump && isGrounded)
         {
             rb.AddForce(Vector3.up * speed[1] * rb.mass, ForceMode.Impulse);
@@ -48,6 +48,10 @@ public class DeplacementJoueur : MonoBehaviour
         isGrounded = true;
     }
 
+    void OnCollisionEnter(Collision other)
+    {  
+        isGrounded = true;
+    }
     void OnCollisionExit(Collision other)
     {
         isGrounded = false;
