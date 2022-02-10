@@ -10,6 +10,7 @@ public class DeplacementJoueur : MonoBehaviour
     private bool inputJump;
     private Vector3 mouvement;
     private Vector3 rotation;
+    private bool isGrounded = true;
     
     // Start is called before the first frame update
     void Start()
@@ -33,10 +34,18 @@ public class DeplacementJoueur : MonoBehaviour
         // La touche espace (space) pour sauter 
         inputJump = Input.GetKeyDown(KeyCode.Space);
         
-        if (inputJump)
+        if (inputJump && isGrounded)
         {
             rb.AddForce(Vector3.up * speed[1], ForceMode.Impulse);
         }
     }
+    void OnCollisionStay(Collision other)
+    {
+        isGrounded = true;
+    }
 
+    void OnCollisionExit(Collision other)
+    {
+        isGrounded = false;
+    }
 }
