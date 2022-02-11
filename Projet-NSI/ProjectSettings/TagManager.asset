@@ -7,7 +7,6 @@ TagManager:
   - cameraCheckpoint2
   - cameraCheckpoint1
   - BonusScore
-  - BonusVitesse
   layers:
   - Default
   - TransparentFX
