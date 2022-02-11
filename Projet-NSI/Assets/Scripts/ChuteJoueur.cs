@@ -5,20 +5,19 @@ using UnityEngine;
 public class ChuteJoueur : MonoBehaviour
 {
     private Vector3 respawn = new Vector3(0, 3, 0);
-    private CharacterController cc;
+    public float offsetY = -10f;
     // Start is called before the first frame update
     void Start()
     {
-        cc = GetComponent<CharacterController>();
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(transform.position.y < -20)
+        if(transform.position.y < offsetY)
         {
-            cc.Move(-transform.position + respawn);
-            Debug.Log(cc.transform.position + respawn);
+            transform.position = respawn;
         }
     }
 
@@ -26,7 +25,7 @@ public class ChuteJoueur : MonoBehaviour
     {
         if (other.tag == "Respawn")
         {
-            respawn = other.transform.position + respawn;
+            respawn = other.transform.position + new Vector3(0, 3, 0);
         }
     }
 }

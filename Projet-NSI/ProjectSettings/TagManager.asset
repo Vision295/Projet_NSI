@@ -4,8 +4,6 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - cameraCheckpoint2
-  - cameraCheckpoint1
   - BonusScore
   layers:
   - Default
