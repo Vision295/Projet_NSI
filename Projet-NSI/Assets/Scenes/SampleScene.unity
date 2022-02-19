@@ -342,10 +342,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlateformeMontante
       objectReference: {fileID: 0}
-    - target: {fileID: 985953708647111366, guid: abb29334325cf1f4ba3a3e8788d4ca8a, type: 3}
-      propertyPath: moveSpeed
-      value: 3
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: abb29334325cf1f4ba3a3e8788d4ca8a, type: 3}
 --- !u!108 &705507994 stripped
@@ -1202,7 +1198,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3506867752371192876, guid: bb62cad4ef08a8748b55e1ea43ef8635, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 10.1
+      value: 11.1
       objectReference: {fileID: 0}
     - target: {fileID: 3506867752371192876, guid: bb62cad4ef08a8748b55e1ea43ef8635, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1369,7 +1365,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6036005319552028521, guid: 673f4f625c21c7b47acb5abd941569c2, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 10.1
+      value: 11.1
       objectReference: {fileID: 0}
     - target: {fileID: 6036005319552028521, guid: 673f4f625c21c7b47acb5abd941569c2, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1467,6 +1463,10 @@ PrefabInstance:
     - target: {fileID: 6582254411259195963, guid: 22f57c37cc14f994b96078d462d77833, type: 3}
       propertyPath: speed.Array.data[0]
       value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 6582254411259195963, guid: 22f57c37cc14f994b96078d462d77833, type: 3}
+      propertyPath: speed.Array.data[1]
+      value: 25
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 22f57c37cc14f994b96078d462d77833, type: 3}
