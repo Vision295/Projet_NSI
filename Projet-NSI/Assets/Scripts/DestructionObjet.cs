@@ -19,7 +19,6 @@ public class DestructionObjet : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
         Destroy(gameObject);
-        Debug.Log("trest");
     }
 
 }
