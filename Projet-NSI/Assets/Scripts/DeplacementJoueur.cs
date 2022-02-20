@@ -12,6 +12,7 @@ public class DeplacementJoueur : MonoBehaviour
     private Vector3 rotation;
     public IsGrounded pied;
     public bool collision;
+    public GameObject pf;
     
     // Start is called before the first frame update
     void Start()
@@ -59,5 +60,12 @@ public class DeplacementJoueur : MonoBehaviour
     void OnCollisionExit(Collision other)
     {
         collision = false;
+    }
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "Bouton")
+        {
+            pf.GetComponent<MontePF>().enabled = false;
+        }
     }
 }

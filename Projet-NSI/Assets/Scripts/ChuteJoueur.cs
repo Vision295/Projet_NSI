@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ChuteJoueur : MonoBehaviour
 {
@@ -18,6 +19,7 @@ public class ChuteJoueur : MonoBehaviour
         if(transform.position.y < offsetY)
         {
             transform.position = respawn;
+            SceneManager.LoadScene("SampleScene");       
         }
     }
 

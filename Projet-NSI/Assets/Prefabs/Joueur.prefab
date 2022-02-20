@@ -225,6 +225,8 @@ MonoBehaviour:
   - 15
   - 25
   pied: {fileID: 6582254411778529499}
+  collision: 0
+  pf: {fileID: 0}
 --- !u!136 &3887481944417043321
 CapsuleCollider:
   m_ObjectHideFlags: 0
