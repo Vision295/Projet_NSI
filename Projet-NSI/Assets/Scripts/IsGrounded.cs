@@ -30,5 +30,4 @@ public class IsGrounded : MonoBehaviour
     {
         isGrounded = false;
     }
-
 }

@@ -11,6 +11,7 @@ public class DeplacementJoueur : MonoBehaviour
     private Vector3 mouvement;
     private Vector3 rotation;
     public IsGrounded pied;
+    public bool collision;
     
     // Start is called before the first frame update
     void Start()
@@ -29,7 +30,7 @@ public class DeplacementJoueur : MonoBehaviour
 
         // Le joueur avance en fonction des inputs horizontaux et verticaux
         mouvement = new Vector3(horizontalInput, 0, verticalInput);
-        if(pied.isGrounded)
+        if(pied.isGrounded || !collision)
         {
             rb.AddRelativeForce((mouvement * speed[0] - rb.velocity) * rb.mass, ForceMode.Force);
         }
@@ -44,6 +45,19 @@ public class DeplacementJoueur : MonoBehaviour
         if (!pied.isGrounded)
         {
             rb.AddForce(Vector3.down * speed[1] * 0.5f * rb.mass, ForceMode.Force);
-        }
+        }    
+    }
+     void OnCollisionStay(Collision other)
+    {
+        collision = true;
+    }
+
+    void OnCollisionEnter(Collision other)
+    {  
+        collision = true;
+    }
+    void OnCollisionExit(Collision other)
+    {
+        collision = false;
     }
 }
