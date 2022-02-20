@@ -1,4 +1,4 @@
-    using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -11,6 +11,7 @@ public class DeplacementJoueur : MonoBehaviour
     private Vector3 mouvement;
     public IsGrounded pied;
     public CollisionJoueur colJ;
+    private Quaternion rotation;
     
     // Start is called before the first frame update
     void Start()

@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7088228346805477483}
   - component: {fileID: 1208893420294538626}
   - component: {fileID: 3938464044067823656}
+  - component: {fileID: 158766240}
   m_Layer: 0
   m_Name: bouton
   m_TagString: Bouton
@@ -98,3 +99,16 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &158766240
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5932645227781784009}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4bb190cb858e1a45a112e5ff3775cd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pf: {fileID: 0}
