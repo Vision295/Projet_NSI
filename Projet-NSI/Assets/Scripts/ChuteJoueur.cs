@@ -7,11 +7,6 @@ public class ChuteJoueur : MonoBehaviour
 {
     private Vector3 respawn = new Vector3(0, 3, 0);
     public float offsetY = -10f;
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
 
     // Update is called once per frame
     void Update()
@@ -19,7 +14,6 @@ public class ChuteJoueur : MonoBehaviour
         if(transform.position.y < offsetY)
         {
             transform.position = respawn;
-            SceneManager.LoadScene("SampleScene");       
         }
     }
 

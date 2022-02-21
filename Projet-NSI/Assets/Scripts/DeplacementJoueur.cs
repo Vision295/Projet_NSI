@@ -8,7 +8,7 @@ public class DeplacementJoueur : MonoBehaviour
     public float[] speed;
     private Rigidbody rb;
     private bool inputJump;
-    private Vector3 mouvement;
+    private Vector3 mouvement, rotationN;
     public IsGrounded pied;
     public CollisionJoueur colJ;
     private Quaternion rotation;
@@ -30,11 +30,12 @@ public class DeplacementJoueur : MonoBehaviour
 
         // Le joueur avance en fonction des inputs horizontaux et verticaux
         mouvement = new Vector3(horizontalInput, 0, verticalInput);
+
         if(pied.isGrounded || !colJ.collision)
         {
             rb.AddRelativeForce((mouvement * speed[0] - rb.velocity) * rb.mass, ForceMode.Force);
         }
-
+        
         // La touche espace (space) pour sauter 
         inputJump = Input.GetKeyDown(KeyCode.Space);
 
@@ -44,7 +45,7 @@ public class DeplacementJoueur : MonoBehaviour
         }
         if (!pied.isGrounded)
         {
-            rb.AddForce(Vector3.down * speed[1] * 0.5f * rb.mass, ForceMode.Force);
-        }    
+            rb.AddForce(Vector3.down * speed[1] * rb.mass, ForceMode.Force);
+        }
     }
 }
