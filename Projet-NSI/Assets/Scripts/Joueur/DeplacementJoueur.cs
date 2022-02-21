@@ -9,7 +9,9 @@ public class DeplacementJoueur : MonoBehaviour
     private Rigidbody rb;
     private bool inputJump;
     private Vector3 mouvement, rotationN;
+    // variable contenant le script isgrounded
     public IsGrounded pied;
+    // variable contenant le script collisionjoueur
     public CollisionJoueur colJ;
     private Quaternion rotation;
     
@@ -30,19 +32,23 @@ public class DeplacementJoueur : MonoBehaviour
 
         // Le joueur avance en fonction des inputs horizontaux et verticaux
         mouvement = new Vector3(horizontalInput, 0, verticalInput);
-
+        
+        // si le joueur touche le sol ou qu'il n'est pas en collision
         if(pied.isGrounded || !colJ.collision)
         {
+            // fait avance le joueur
             rb.AddRelativeForce((mouvement * speed[0] - rb.velocity) * rb.mass, ForceMode.Force);
         }
         
         // La touche espace (space) pour sauter 
         inputJump = Input.GetKeyDown(KeyCode.Space);
 
+        // fait sauter le joueur s'il ne touche pas le sol
         if (inputJump && pied.isGrounded)
         {
             rb.AddForce(Vector3.up * speed[1] * rb.mass, ForceMode.Impulse);
         }
+        // fait descendre le joueur plus rapidement
         if (!pied.isGrounded)
         {
             rb.AddForce(Vector3.down * speed[1] * rb.mass, ForceMode.Force);

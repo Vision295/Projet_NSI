@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class CollisionJoueur : MonoBehaviour
 {
+    // stocke les collisions du joueur avec les obstacles
     public bool collision;
      void OnCollisionStay(Collision other)
     {
