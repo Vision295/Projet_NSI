@@ -461,10 +461,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 337153761627767169, guid: bdc7001752892964a9a325a55f447cb6, type: 3}
-      propertyPath: m_Constraints
-      value: 116
-      objectReference: {fileID: 0}
     - target: {fileID: 6161980205724758515, guid: bdc7001752892964a9a325a55f447cb6, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -1231,10 +1227,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 869496130607950314, guid: 8f2c6ea805d22c043a4d167e8de6ca9b, type: 3}
-      propertyPath: m_Mass
-      value: 1000
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8f2c6ea805d22c043a4d167e8de6ca9b, type: 3}
 --- !u!1001 &1172618313602454501
@@ -1524,10 +1516,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlateformeMobile
       objectReference: {fileID: 0}
-    - target: {fileID: 5174993591637295706, guid: a4f570a8db0d5784eab62b56ca73cd26, type: 3}
-      propertyPath: m_Constraints
-      value: 94
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a4f570a8db0d5784eab62b56ca73cd26, type: 3}
 --- !u!1001 &6036005319247772710
@@ -1537,10 +1525,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 3303473348445032037, guid: 673f4f625c21c7b47acb5abd941569c2, type: 3}
-      propertyPath: m_Mass
-      value: 1000
-      objectReference: {fileID: 0}
     - target: {fileID: 6036005319552028521, guid: 673f4f625c21c7b47acb5abd941569c2, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -1646,10 +1630,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6582254411259195961, guid: 22f57c37cc14f994b96078d462d77833, type: 3}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 22f57c37cc14f994b96078d462d77833, type: 3}
 --- !u!1001 &7119737045061589218
