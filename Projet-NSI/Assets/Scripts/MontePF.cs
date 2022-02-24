@@ -4,15 +4,8 @@ using UnityEngine;
 
 public class MontePF : MonoBehaviour
 {
-    public float moveSpeed = 1.0f;
-    public int allezRetour = 0;
-    public float moveInterval = 10.0f;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    private float moveSpeed = 1.0f;
+    private int allezRetour = 0;    
 
     // Update is called once per frame
     void Update()
@@ -31,7 +24,6 @@ public class MontePF : MonoBehaviour
         } else if (allezRetour == 1)
         {
             transform.Translate(Vector3.down * moveSpeed * Time.deltaTime);
-        }
-        
+        }        
     }
 }
