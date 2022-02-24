@@ -1516,10 +1516,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlateformeMobile
       objectReference: {fileID: 0}
-    - target: {fileID: 5174993591637295706, guid: a4f570a8db0d5784eab62b56ca73cd26, type: 3}
-      propertyPath: m_Constraints
-      value: 94
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a4f570a8db0d5784eab62b56ca73cd26, type: 3}
 --- !u!1001 &6036005319247772710
