@@ -19,10 +19,10 @@ public class MontePF : MonoBehaviour
 
     void Update()
     {
-        if (transform.position.y > downLimit)
+        if (transform.position.y > upLimit)
         {
             allezRetour = 1;
-        } else if (transform.position.y < upLimit)
+        } else if (transform.position.y < downLimit)
         {
             allezRetour = 0;
         }
