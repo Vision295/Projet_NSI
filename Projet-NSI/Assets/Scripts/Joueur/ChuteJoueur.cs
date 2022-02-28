@@ -1,18 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ChuteJoueur : MonoBehaviour
 {
     private Vector3 respawn = new Vector3(0, 3, 0);
     public float offsetY = -10f;
-    // Start is called before the first frame update
-    void Start()
-    {
 
-    }
-
-    // Update is called once per frame
+    // lorsque le joueur est en dehors des limites de chute
     void Update()
     {
         if(transform.position.y < offsetY)
@@ -21,6 +17,7 @@ public class ChuteJoueur : MonoBehaviour
         }
     }
 
+    // lorsque le joueur entre en collision avec un checkpoint
     void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Respawn")
