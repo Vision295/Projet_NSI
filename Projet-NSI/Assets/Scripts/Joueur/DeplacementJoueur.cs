@@ -67,7 +67,7 @@ public class DeplacementJoueur : MonoBehaviour
         if(pied.isGrounded || !colJ.collision)
         {
             // fait avance le joueur
-            rb.AddRelativeForce((mouvement * speed[0] - rb.velocity) * rb.mass, ForceMode.Force);
+            rb.AddRelativeForce((mouvement * speed[0] - rb.velocity) * rb.mass * Time.fixedDeltaTime, ForceMode.Force);
         }
         
         // La touche espace (space) pour sauter 
@@ -76,12 +76,12 @@ public class DeplacementJoueur : MonoBehaviour
         // fait sauter le joueur s'il ne touche pas le sol
         if (inputJump && pied.isGrounded)
         {
-            rb.AddForce(Vector3.up * speed[1] * rb.mass, ForceMode.Impulse);
+            rb.AddForce(Vector3.up * speed[1] * rb.mass * Time.fixedDeltaTime, ForceMode.Impulse);
         }
         // fait descendre le joueur plus rapidement
         if (!pied.isGrounded)
         {
-            rb.AddForce(Vector3.down * speed[1] * rb.mass, ForceMode.Force);
+            rb.AddForce(Vector3.down * speed[1] * rb.mass * Time.fixedDeltaTime, ForceMode.Force);
         }
     }
 }
