@@ -28,10 +28,7 @@ public class DeplacementJoueur : MonoBehaviour
         // regarde cette vidéo : https://www.youtube.com/watch?v=UUJMGQTT5ts&ab_channel=iHeartGameDev
 
         // Input vertical et horizontal correspond aux flèches du clavier
-        horizontalInput = Input.GetAxis("Horizontal");
-        verticalInput = Input.GetAxis("Vertical");
-
-        /* if (Input.GetKeyDown(KeyCode.RightArrow))
+        if (Input.GetKeyDown(KeyCode.RightArrow))
         {
             horizontalInput = 1;
         } else if (Input.GetKeyDown(KeyCode.LeftArrow))
@@ -59,7 +56,7 @@ public class DeplacementJoueur : MonoBehaviour
         } else if (Input.GetKeyUp(KeyCode.DownArrow))
         {
             verticalInput = 0;
-        } */
+        }
 
         // Le joueur avance en fonction des inputs horizontaux et verticaux
         mouvement = new Vector3(horizontalInput, 0, verticalInput);
