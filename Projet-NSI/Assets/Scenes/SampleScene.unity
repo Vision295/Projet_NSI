@@ -1698,18 +1698,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6582254411259195961, guid: 22f57c37cc14f994b96078d462d77833, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
     - target: {fileID: 6582254411259195963, guid: 22f57c37cc14f994b96078d462d77833, type: 3}
       propertyPath: speed.Array.data[0]
       value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 6582254411259195963, guid: 22f57c37cc14f994b96078d462d77833, type: 3}
       propertyPath: speed.Array.data[1]
-      value: 25
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 7639513913864634026, guid: 22f57c37cc14f994b96078d462d77833, type: 3}
       propertyPath: DJ
       value: 
       objectReference: {fileID: 1430863481}
+    - target: {fileID: 9121980740740106220, guid: 22f57c37cc14f994b96078d462d77833, type: 3}
+      propertyPath: m_Constraints
+      value: 112
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 22f57c37cc14f994b96078d462d77833, type: 3}
 --- !u!1001 &7119737045061589218

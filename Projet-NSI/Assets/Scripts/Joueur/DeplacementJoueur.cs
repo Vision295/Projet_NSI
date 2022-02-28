@@ -58,8 +58,13 @@ public class DeplacementJoueur : MonoBehaviour
             verticalInput = 0;
         }
 
+        if(horizontalInput != 0)
+        {
+            transform.Rotate(Vector3.up * horizontalInput);
+        }
+
         // Le joueur avance en fonction des inputs horizontaux et verticaux
-        mouvement = new Vector3(horizontalInput, 0, verticalInput);
+        mouvement = new Vector3(0, 0, verticalInput);
         
         // si le joueur touche le sol ou qu'il n'est pas en collision
         if(pied.isGrounded || !colJ.collision)
@@ -80,7 +85,7 @@ public class DeplacementJoueur : MonoBehaviour
         // fait descendre le joueur plus rapidement
         if (!pied.isGrounded)
         {
-            rb.AddForce(Vector3.down * speed[1] * rb.mass, ForceMode.Force);
+            rb.AddForce(Vector3.down * speed[1] * 1.5f * rb.mass, ForceMode.Force);
         }
     }
 }
