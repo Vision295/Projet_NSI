@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class DeplacementJoueur : MonoBehaviour
 {
-    private float horizontalInput, verticalInput;
+    public float horizontalInput, verticalInput, rotateSpeed = 3f;
     public float[] speed;
     private Rigidbody rb;
     private bool inputJump;
-    private Vector3 mouvement, rotationN;
+    public Vector3 mouvement, rotationN;
     // variable contenant le script isgrounded
     public IsGrounded pied;
     // variable contenant le script collisionjoueur
@@ -60,7 +60,7 @@ public class DeplacementJoueur : MonoBehaviour
 
         if(horizontalInput != 0)
         {
-            transform.Rotate(Vector3.up * horizontalInput);
+            transform.Rotate(Vector3.up * horizontalInput * rotateSpeed);
         }
 
         // Le joueur avance en fonction des inputs horizontaux et verticaux

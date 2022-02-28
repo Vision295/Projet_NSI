@@ -5,6 +5,7 @@ using UnityEngine;
 public class GestionCamera1 : MonoBehaviour
 {
     public GameObject player;
+    public DeplacementJoueur DP;
     public Vector3 offset;
     private float xmouse, ymouse = 25f;
 
@@ -12,19 +13,19 @@ public class GestionCamera1 : MonoBehaviour
     void Start()
     {
         offset = new Vector3(0, 5, -5);
+        DP = player.GetComponent<DeplacementJoueur>();
+        transform.SetPositionAndRotation(new Vector3(transform.position.x, transform.position.y + 3f, transform.position.z), transform.rotation);
     }
 
     // Update is called once per frame
     void Update()
     {
-        transform.position = player.transform.position + offset;
-
-        if (Input.GetMouseButton(1))
+        /* if (Input.GetMouseButton(1))
         {
             xmouse -= 2 * Input.GetAxis("Mouse X");
             ymouse += 2 * Input.GetAxis("Mouse Y");
         }
 
-        transform.rotation = Quaternion.Euler(new Vector3(ymouse, xmouse, 0.0f));
+        transform.rotation = Quaternion.Euler(new Vector3(ymouse, xmouse, 0.0f)); */
     }
 }
