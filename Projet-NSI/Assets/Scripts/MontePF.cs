@@ -5,15 +5,24 @@ using UnityEngine;
 public class MontePF : MonoBehaviour
 {
     private float moveSpeed = 1.0f;
-    private int allezRetour = 0;    
+    private int allezRetour = 0;
+    public float spaceInterval = 10.0f;
+    public float downLimit;
+    public float upLimit;
 
     // Update is called once per frame
+    void Start()
+    {
+        downLimit = transform.position.y - spaceInterval;
+        upLimit = transform.position.y + spaceInterval;
+    }
+
     void Update()
     {
-        if (transform.position.y > 13)
+        if (transform.position.y > upLimit)
         {
             allezRetour = 1;
-        } else if (transform.position.y < -7)
+        } else if (transform.position.y < downLimit)
         {
             allezRetour = 0;
         }

@@ -30,6 +30,36 @@ public class DeplacementJoueur : MonoBehaviour
         horizontalInput = Input.GetAxis("Horizontal");
         verticalInput = Input.GetAxis("Vertical");
 
+        /* if (Input.GetKeyDown(KeyCode.RightArrow))
+        {
+            horizontalInput = 1;
+        } else if (Input.GetKeyDown(KeyCode.LeftArrow))
+        {
+            horizontalInput = -1;
+        }
+        if (Input.GetKeyUp(KeyCode.RightArrow))
+        {
+            horizontalInput = 0;
+        } else if (Input.GetKeyUp(KeyCode.LeftArrow))
+        {
+            horizontalInput = 0;
+        }
+
+        if (Input.GetKeyDown(KeyCode.UpArrow))
+        {
+            verticalInput = 1;
+        } else if (Input.GetKeyDown(KeyCode.DownArrow))
+        {
+            verticalInput = -1;
+        }
+        if (Input.GetKeyUp(KeyCode.UpArrow))
+        {
+            verticalInput = 0;
+        } else if (Input.GetKeyUp(KeyCode.DownArrow))
+        {
+            verticalInput = 0;
+        } */
+
         // Le joueur avance en fonction des inputs horizontaux et verticaux
         mouvement = new Vector3(horizontalInput, 0, verticalInput);
         
@@ -38,6 +68,7 @@ public class DeplacementJoueur : MonoBehaviour
         {
             // fait avance le joueur
             rb.AddRelativeForce((mouvement * speed[0] - rb.velocity) * rb.mass, ForceMode.Force);
+            //rb.velocity = mouvement * speed[0] * rb.mass * Time.deltaTime;
         }
         
         // La touche espace (space) pour sauter 
