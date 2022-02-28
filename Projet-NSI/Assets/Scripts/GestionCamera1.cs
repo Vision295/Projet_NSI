@@ -7,7 +7,7 @@ public class GestionCamera1 : MonoBehaviour
     public GameObject player;
     public DeplacementJoueur DP;
     public Vector3 offset;
-    private float xmouse, ymouse = 25f;
+    private float xmouse, ymouse;
 
     // Start is called before the first frame update
     void Start()
