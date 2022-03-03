@@ -70,8 +70,11 @@ public class DeplacementJoueur : MonoBehaviour
         if(pied.isGrounded || !colJ.collision)
         {
             // fait avance le joueur
-            rb.AddRelativeForce((mouvement * speed[0] - rb.velocity) * rb.mass, ForceMode.Force);
+            rb.AddRelativeForce((mouvement * speed[0]) * rb.mass, ForceMode.Force);
             //rb.velocity = mouvement * speed[0] * rb.mass * Time.deltaTime;
+        } else 
+        {
+            rb.velocity = new Vector3(0, 0, 0);
         }
         
         // La touche espace (space) pour sauter 
