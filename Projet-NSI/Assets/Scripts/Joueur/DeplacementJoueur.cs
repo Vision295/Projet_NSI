@@ -76,7 +76,7 @@ public class DeplacementJoueur : MonoBehaviour
         {
             rb.velocity = new Vector3(0, 0, 0);
         }
-        
+
         // La touche espace (space) pour sauter 
         inputJump = Input.GetKeyDown(KeyCode.Space);
 
