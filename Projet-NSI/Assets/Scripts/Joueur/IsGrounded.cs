@@ -16,12 +16,18 @@ public class IsGrounded : MonoBehaviour
     // si le joueur touche le sol
     void OnCollisionStay(Collision other)
     {
-        isGrounded = true;
+        if(other.gameObject.tag != "Player")
+        {
+            isGrounded = true;
+        }
     }
 
     void OnCollisionEnter(Collision other)
     {  
-        isGrounded = true;
+        if(other.gameObject.tag != "Player")
+        {
+            isGrounded = true;
+        }
     }
     void OnCollisionExit(Collision other)
     {
