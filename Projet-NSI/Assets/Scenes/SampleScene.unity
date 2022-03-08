@@ -1273,7 +1273,7 @@ PrefabInstance:
     - target: {fileID: 572233581806954716, guid: f8ea32a869d0a654d8eb51c40373f9ec, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 13400000, guid: 97c8734ec3345c246a093928bf302475, type: 2}
+      objectReference: {fileID: 13400000, guid: 390dd1a03829c5d4b9b4501926410a0f, type: 2}
     - target: {fileID: 572233581806954717, guid: f8ea32a869d0a654d8eb51c40373f9ec, type: 3}
       propertyPath: m_Name
       value: Plateforme
@@ -1827,7 +1827,7 @@ PrefabInstance:
     - target: {fileID: 3887481944417043321, guid: 22f57c37cc14f994b96078d462d77833, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 13400000, guid: 390dd1a03829c5d4b9b4501926410a0f, type: 2}
     - target: {fileID: 6582254411259195908, guid: 22f57c37cc14f994b96078d462d77833, type: 3}
       propertyPath: m_Name
       value: Joueur

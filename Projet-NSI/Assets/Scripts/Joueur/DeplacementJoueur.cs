@@ -67,17 +67,8 @@ public class DeplacementJoueur : MonoBehaviour
         mouvement = new Vector3(0, 0, verticalInput);
         
         // si le joueur touche le sol ou qu'il n'est pas en collision
-        if(pied.isGrounded || !colJ.collision)
-        {
-            // fait avance le joueur
-            rb.AddRelativeForce((mouvement * speed[0]) * rb.mass, ForceMode.Force);
-            //rb.velocity = mouvement * speed[0] * rb.mass * Time.deltaTime;
-        } else 
-        {
-            rb.velocity = new Vector3(0, 0, 0);
-        }
+        rb.AddRelativeForce((mouvement * speed[0]) * rb.mass, ForceMode.Force);
 
-        // La touche espace (space) pour sauter 
         inputJump = Input.GetKeyDown(KeyCode.Space);
 
         // fait sauter le joueur s'il ne touche pas le sol
