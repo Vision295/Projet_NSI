@@ -9,9 +9,7 @@ public class Manager : MonoBehaviour
 
     [SerializeField]
     Transform UIPanel; //Will assign our panel to this variable so we can enable/disable it
-
-    [SerializeField]
-    Text timeText; //Will assign our Time Text to this variable so we can modify the text it displays.
+    public Transform pause;
 
     public bool isPaused; //Used to determine paused state
     public Camera cam;
@@ -22,14 +20,11 @@ public class Manager : MonoBehaviour
     {
         UIPanel.gameObject.SetActive(false); //fait en sorte que le menu ne se voit pas lors du lancement de la scène
         isPaused = false; //make sure isPaused is always false when our scene opens
-        
+        pause.gameObject.SetActive(true);
     }
 
     void Update ()
     {
-
-        timeText.text = "Time since sartup : " + Time.timeSinceLevelLoad; //Tells us the time since the scene loaded
-
         //If player presses escape and game is not paused. Pause game. If game is paused and player presses escape, unpause.
         if(Input.GetKeyDown(KeyCode.Escape) && !isPaused)
         {
@@ -40,7 +35,10 @@ public class Manager : MonoBehaviour
             UnPause();
         }
     }
-
+    public void AfficherPause()
+    {
+        UIPanel.gameObject.SetActive(true);
+    }
     public void Pause()
     {
         posCam = new Vector3(cam.transform.position.x, cam.transform.position.y, cam.transform.position.z);
@@ -48,6 +46,7 @@ public class Manager : MonoBehaviour
         cam.transform.SetPositionAndRotation(new Vector3(0, 10, -10), Quaternion.Euler(25, 0, 0));
         isPaused = true;
         UIPanel.gameObject.SetActive(true); //turn on the pause menu
+        pause.gameObject.SetActive(false);
         Time.timeScale = 0f; //pause the game
     }
 
@@ -55,6 +54,7 @@ public class Manager : MonoBehaviour
     {
         cam.transform.SetPositionAndRotation(posCam, rotationCam);
         isPaused = false;
+        pause.gameObject.SetActive(true);
         UIPanel.gameObject.SetActive(false); //turn off pause menu
         Time.timeScale = 1f; //resume game
     }
