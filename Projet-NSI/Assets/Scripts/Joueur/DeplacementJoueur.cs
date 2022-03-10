@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class DeplacementJoueur : MonoBehaviour
 {
-    private float horizontalInput, verticalInput;
+    public float horizontalInput, verticalInput, rotateSpeed = 3f;
     public float[] speed;
     private Rigidbody rb;
     private bool inputJump;
-    private Vector3 mouvement, rotationN;
+    public Vector3 mouvement, rotationN;
     // variable contenant le script isgrounded
     public IsGrounded pied;
     // variable contenant le script collisionjoueur
@@ -58,18 +58,17 @@ public class DeplacementJoueur : MonoBehaviour
             verticalInput = 0;
         }
 
+        if(horizontalInput != 0)
+        {
+            transform.Rotate(Vector3.up * horizontalInput * rotateSpeed);
+        }
+
         // Le joueur avance en fonction des inputs horizontaux et verticaux
-        mouvement = new Vector3(horizontalInput, 0, verticalInput);
+        mouvement = new Vector3(0, 0, verticalInput);
         
         // si le joueur touche le sol ou qu'il n'est pas en collision
-        if(pied.isGrounded || !colJ.collision)
-        {
-            // fait avance le joueur
-            rb.AddRelativeForce((mouvement * speed[0] - rb.velocity) * rb.mass, ForceMode.Force);
-            //rb.velocity = mouvement * speed[0] * rb.mass * Time.deltaTime;
-        }
-        
-        // La touche espace (space) pour sauter 
+        rb.AddRelativeForce((mouvement * speed[0]) * rb.mass, ForceMode.Force);
+
         inputJump = Input.GetKeyDown(KeyCode.Space);
 
         // fait sauter le joueur s'il ne touche pas le sol
@@ -80,7 +79,7 @@ public class DeplacementJoueur : MonoBehaviour
         // fait descendre le joueur plus rapidement
         if (!pied.isGrounded)
         {
-            rb.AddForce(Vector3.down * speed[1] * rb.mass, ForceMode.Force);
+            rb.AddForce(Vector3.down * speed[1] * 1.5f * rb.mass, ForceMode.Force);
         }
     }
 }

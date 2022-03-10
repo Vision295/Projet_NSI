@@ -14,17 +14,27 @@ public class IsGrounded : MonoBehaviour
     }
 
     // si le joueur touche le sol
-    void OnCollisionStay(Collision other)
+    void OnTriggerEnter(Collider other)
     {
-        isGrounded = true;
+        if(other.tag != "Player" && other.tag != "Bouton" && other.tag != "Respawn" && other.tag != "BonusScore" && other.tag != "BonusVitesse" && other.tag != "Pierre")
+        {
+            isGrounded = true;
+        }
     }
 
-    void OnCollisionEnter(Collision other)
+    /* void OnCollisionStay(Collision other)
     {  
-        isGrounded = true;
-    }
-    void OnCollisionExit(Collision other)
+        if(other.gameObject.tag != "Player")
+        {
+            isGrounded = true;
+        }
+    } */
+    
+    async void OnTriggerExit(Collider other)
     {
-        isGrounded = false;
+        if(other.tag != "Player" && other.tag != "Bouton" && other.tag != "Respawn" && other.tag != "BonusScore" && other.tag != "BonusVitesse" && other.tag != "Pierre")
+        {
+            isGrounded = false;
+        }
     }
 }

@@ -14,6 +14,7 @@ public class ChuteJoueur : MonoBehaviour
         if(transform.position.y < offsetY)
         {
             transform.position = respawn;
+            transform.rotation = Quaternion.Euler(0, 0, 0);
         }
     }
 
