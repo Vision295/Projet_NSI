@@ -14,6 +14,9 @@ public class Manager : MonoBehaviour
     Text timeText; //Will assign our Time Text to this variable so we can modify the text it displays.
 
     public bool isPaused; //Used to determine paused state
+    public Camera cam;
+    private Vector3 posCam;
+    private Quaternion rotationCam;
 
     void Start ()
     {
@@ -40,6 +43,9 @@ public class Manager : MonoBehaviour
 
     public void Pause()
     {
+        posCam = new Vector3(cam.transform.position.x, cam.transform.position.y, cam.transform.position.z);
+        rotationCam = new Quaternion(cam.transform.rotation.x, cam.transform.rotation.y, cam.transform.rotation.z, cam.transform.rotation.w);
+        cam.transform.SetPositionAndRotation(new Vector3(0, 10, -10), Quaternion.Euler(25, 0, 0));
         isPaused = true;
         UIPanel.gameObject.SetActive(true); //turn on the pause menu
         Time.timeScale = 0f; //pause the game
@@ -47,6 +53,7 @@ public class Manager : MonoBehaviour
 
     public void UnPause()
     {
+        cam.transform.SetPositionAndRotation(posCam, rotationCam);
         isPaused = false;
         UIPanel.gameObject.SetActive(false); //turn off pause menu
         Time.timeScale = 1f; //resume game
@@ -62,6 +69,7 @@ public class Manager : MonoBehaviour
     }
     public void Restart()
     {
-        SceneManager.LoadScene(0);   
+        SceneManager.LoadScene("SampleScene");
+        Time.timeScale = 1f;
     }
 }
