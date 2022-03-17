@@ -14,7 +14,7 @@ public class GestionCamera1 : MonoBehaviour
     {
         offset = new Vector3(0, 5, -5);
         DP = player.GetComponent<DeplacementJoueur>();
-        transform.SetPositionAndRotation(new Vector3(transform.position.x, transform.position.y + 3f, transform.position.z), transform.rotation);
+        transform.SetPositionAndRotation(new Vector3(transform.position.x, transform.position.y, transform.position.z), transform.rotation);
     }
 
     // Update is called once per frame
