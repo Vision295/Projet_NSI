@@ -41,13 +41,16 @@ public class Manager : MonoBehaviour
     }
     public void Pause()
     {
-        posCam = new Vector3(cam.transform.position.x, cam.transform.position.y, cam.transform.position.z);
-        rotationCam = new Quaternion(cam.transform.rotation.x, cam.transform.rotation.y, cam.transform.rotation.z, cam.transform.rotation.w);
-        cam.transform.SetPositionAndRotation(new Vector3(0, 10, -10), Quaternion.Euler(25, 0, 0));
-        isPaused = true;
-        UIPanel.gameObject.SetActive(true); //turn on the pause menu
-        pause.gameObject.SetActive(false);
-        Time.timeScale = 0f; //pause the game
+        if(!isPaused)
+        {
+            posCam = new Vector3(cam.transform.position.x, cam.transform.position.y, cam.transform.position.z);
+            rotationCam = new Quaternion(cam.transform.rotation.x, cam.transform.rotation.y, cam.transform.rotation.z, cam.transform.rotation.w);
+            cam.transform.SetPositionAndRotation(new Vector3(0, 10, -10), Quaternion.Euler(25, 0, 0));
+            isPaused = true;
+            UIPanel.gameObject.SetActive(true); //turn on the pause menu
+            pause.gameObject.SetActive(false);
+            Time.timeScale = 0f; //pause the game
+        }
     }
 
     public void UnPause()
