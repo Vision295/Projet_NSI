@@ -10,8 +10,7 @@ public class Début : MonoBehaviour
     }
  
     public void restart()
-    {        
-        Debug.Log("test");
+    {  
         SceneManager.LoadScene("SampleScene");
     }
 }   
