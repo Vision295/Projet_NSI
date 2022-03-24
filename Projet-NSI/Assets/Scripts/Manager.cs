@@ -73,7 +73,7 @@ public class Manager : MonoBehaviour
     }
     public void Restart()
     {
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene("Niveau1");
         Time.timeScale = 1f;
     }
 }

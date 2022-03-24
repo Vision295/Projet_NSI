@@ -13,6 +13,7 @@ public class DeplacementJoueur : MonoBehaviour
     public IsGrounded pied;
     // variable contenant le script collisionjoueur
     public CollisionJoueur colJ;
+    public Manager manag;
     private Quaternion rotation;
     
     // Start is called before the first frame update
@@ -58,7 +59,7 @@ public class DeplacementJoueur : MonoBehaviour
             verticalInput = 0;
         }
 
-        if(horizontalInput != 0)
+        if(horizontalInput != 0 && manag.isPaused!)
         {
             transform.Rotate(Vector3.up * horizontalInput * rotateSpeed);
         }
