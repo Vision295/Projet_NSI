@@ -5,6 +5,7 @@ using UnityEngine;
 public class CalculeScore : MonoBehaviour
 {
     public int score = 0;
+    public float endDelay = 10.0f;
     
     // variable contenant le scipt de déplacement du joueur
     public DeplacementJoueur DJ;
@@ -22,6 +23,12 @@ public class CalculeScore : MonoBehaviour
         if (other.tag == "BonusVitesse")
         {
             DJ.speed[0] *= 2;
+            Invoke("SpeedBonusEnd", endDelay);
         }
+    }
+
+    void SpeedBonusEnd()
+    {
+        DJ.speed[0] /= 2;
     }
 }
