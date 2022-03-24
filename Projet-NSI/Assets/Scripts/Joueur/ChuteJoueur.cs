@@ -5,8 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class ChuteJoueur : MonoBehaviour
 {
-    private Vector3 respawn = new Vector3(0, 3, 0);
-    public float offsetY = -10f;
+    public Vector3 respawn = new Vector3(0, 3, 0);
+    public float offsetY = 50f;
 
     // lorsque le joueur est en dehors des limites de chute
     void Update()
