@@ -59,7 +59,7 @@ public class DeplacementJoueur : MonoBehaviour
             verticalInput = 0;
         }
 
-        if(horizontalInput != 0 && manag.isPaused!)
+        if(horizontalInput != 0 && !manag.isPaused)
         {
             transform.Rotate(Vector3.up * horizontalInput * rotateSpeed);
         }
