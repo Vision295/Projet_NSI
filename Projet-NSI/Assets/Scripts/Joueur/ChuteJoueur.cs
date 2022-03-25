@@ -6,15 +6,23 @@ using UnityEngine.SceneManagement;
 public class ChuteJoueur : MonoBehaviour
 {
     public Vector3 respawn = new Vector3(0, 3, 0);
-    public float offsetY = 50f;
+    public float offsetY = 0f;
+    private CharacterController cc;
+
+    void Start()
+    {
+        cc = gameObject.GetComponent<CharacterController>();
+    }
 
     // lorsque le joueur est en dehors des limites de chute
     void Update()
     {
         if(transform.position.y < offsetY)
         {
-            transform.position = respawn;
-            transform.rotation = Quaternion.Euler(0, -90, 0);
+            cc.enabled = false;
+            cc.transform.position = respawn;
+            cc.transform.rotation = Quaternion.Euler(0, -90, 0);
+            cc.enabled = true;
         }
     }
 
