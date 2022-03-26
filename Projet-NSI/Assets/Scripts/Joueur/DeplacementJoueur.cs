@@ -15,6 +15,7 @@ public class DeplacementJoueur : MonoBehaviour
     void Start()
     {
         cc = GetComponent<CharacterController>();
+        Application.targetFrameRate = 60;
     }
 
     // Update is called once per frame
