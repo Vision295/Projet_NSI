@@ -15,6 +15,7 @@ public class Manager : MonoBehaviour
     public Camera cam;
     private Vector3 posCam;
     private Quaternion rotationCam;
+    public GameObject bouttonPause, bouttonResume, bouttonRestart, bouttonExit;
 
     void Start ()
     {
@@ -75,5 +76,53 @@ public class Manager : MonoBehaviour
     {
         SceneManager.LoadScene("Niveau1");
         Time.timeScale = 1f;
+    }
+
+    public void HoverPause()
+    {
+        if(!isPaused)
+        {
+            bouttonPause.transform.localScale = new Vector3(13, 10, 13);
+        }
+    }
+    public void UnhoverPause()
+    {
+        bouttonPause.transform.localScale = new Vector3(10, 10, 10);
+    }
+
+    public void HoverResume()
+    {
+        if(isPaused)
+        {
+            bouttonResume.transform.localScale = new Vector3(2, 1.67f, 2);
+        }
+    }
+    public void UnhoverResume()
+    {
+        bouttonResume.transform.localScale = new Vector3(1.67f, 1.67f, 1.67f);
+    }
+
+    public void HoverRetart()
+    {
+        if(isPaused)
+        {
+            bouttonRestart.transform.localScale = new Vector3(2, 1.67f, 2);
+        }
+    }
+    public void UnhoverRestart()
+    {
+        bouttonRestart.transform.localScale = new Vector3(1.67f, 1.67f, 1.67f);
+    }
+
+    public void HoverExit()
+    {
+        if(isPaused)
+        {
+            bouttonExit.transform.localScale = new Vector3(2, 1.67f, 2);
+        }
+    }
+    public void UnhoverExit()
+    {
+        bouttonExit.transform.localScale = new Vector3(1.67f, 1.67f, 1.67f);
     }
 }
