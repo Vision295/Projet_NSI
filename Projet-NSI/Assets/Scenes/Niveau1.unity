@@ -1569,7 +1569,7 @@ PrefabInstance:
       objectReference: {fileID: 1448676945}
     - target: {fileID: 6582254411259195963, guid: 22f57c37cc14f994b96078d462d77833, type: 3}
       propertyPath: speed.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6582254411259195963, guid: 22f57c37cc14f994b96078d462d77833, type: 3}
       propertyPath: speed.Array.data[0]
@@ -1581,7 +1581,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6582254411259195963, guid: 22f57c37cc14f994b96078d462d77833, type: 3}
       propertyPath: speed.Array.data[2]
-      value: 5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7639513913864634026, guid: 22f57c37cc14f994b96078d462d77833, type: 3}
       propertyPath: DJ

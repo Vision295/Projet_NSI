@@ -43,6 +43,6 @@ public class DeplacementJoueur : MonoBehaviour
         directionY -= gravity * Time.deltaTime;
         mouvement.y = directionY;
         cc.Move(mouvement * Time.deltaTime * 5f);
-        transform.Rotate(new Vector3(0, horizontalInput, 0));
+        transform.Rotate(new Vector3(0, horizontalInput * speed[2], 0));
     }
 }
