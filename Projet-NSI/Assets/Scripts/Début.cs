@@ -11,6 +11,6 @@ public class Début : MonoBehaviour
  
     public void restart()
     {  
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene("Niveau1");
     }
 }   
