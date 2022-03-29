@@ -46,8 +46,7 @@ public class Manager : MonoBehaviour
         {
             posCam = new Vector3(cam.transform.position.x, cam.transform.position.y, cam.transform.position.z);
             rotationCam = new Quaternion(cam.transform.rotation.x, cam.transform.rotation.y, cam.transform.rotation.z, cam.transform.rotation.w);
-            cam.transform.SetPositionAndRotation(new Vector3(0, 10, -10), Quaternion.Euler(25, 0, 0));
-            // coordonées à changer sur samplescene : new Vector3(0, 10, -10), Quaternion.Euler(25, 0, 0)
+            //cam.transform.SetPositionAndRotation(new Vector3(0, 65, 0), Quaternion.Euler(25, -90, 0));
             isPaused = true;
             UIPanel.gameObject.SetActive(true); //turn on the pause menu
             pause.gameObject.SetActive(false);
@@ -78,51 +77,23 @@ public class Manager : MonoBehaviour
         Time.timeScale = 1f;
     }
 
-    public void HoverPause()
+    public static void hover(GameObject objet)
     {
-        if(!isPaused)
+        if(objet.tag == "Pause")
         {
-            bouttonPause.transform.localScale = new Vector3(13, 10, 13);
+            objet.transform.localScale = new Vector3(13, 10, 13);
+        } else {
+            objet.transform.localScale = new Vector3(2, 1.67f, 2);
         }
-    }
-    public void UnhoverPause()
-    {
-        bouttonPause.transform.localScale = new Vector3(10, 10, 10);
     }
 
-    public void HoverResume()
+    public static void Unhover(GameObject objet)
     {
-        if(isPaused)
+        if(objet.tag == "Pause")
         {
-            bouttonResume.transform.localScale = new Vector3(2, 1.67f, 2);
+            objet.transform.localScale = new Vector3(10, 10, 10);
+        } else {
+            objet.transform.localScale = new Vector3(1.67f, 1.67f, 1.67f);
         }
-    }
-    public void UnhoverResume()
-    {
-        bouttonResume.transform.localScale = new Vector3(1.67f, 1.67f, 1.67f);
-    }
-
-    public void HoverRetart()
-    {
-        if(isPaused)
-        {
-            bouttonRestart.transform.localScale = new Vector3(2, 1.67f, 2);
-        }
-    }
-    public void UnhoverRestart()
-    {
-        bouttonRestart.transform.localScale = new Vector3(1.67f, 1.67f, 1.67f);
-    }
-
-    public void HoverExit()
-    {
-        if(isPaused)
-        {
-            bouttonExit.transform.localScale = new Vector3(2, 1.67f, 2);
-        }
-    }
-    public void UnhoverExit()
-    {
-        bouttonExit.transform.localScale = new Vector3(1.67f, 1.67f, 1.67f);
     }
 }
