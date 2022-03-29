@@ -1,23 +1,22 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
-public class Findeniveau : MonoBehaviour
+
+public class findeniveau : MonoBehaviour
 {
+        
         [SerializeField]
 
         Transform UIPanel;
-
-    void Start()
+    void Start ()
 
     {
         UIPanel.gameObject.SetActive(true); 
     }
-
     public void OnMouseUpAsButton()
 
     {
-        SceneManager.LoadScene("Untitled");     
+        SceneManager.LoadScene("Niveau2");     
     }
-
     public void OnMouseUpAsButton2()
 
     {
@@ -27,6 +26,5 @@ public class Findeniveau : MonoBehaviour
     public void OnMouseUpAsButton3()
     {
         SceneManager.LoadScene("SampleScene");
-    }
-        
+    }        
 }

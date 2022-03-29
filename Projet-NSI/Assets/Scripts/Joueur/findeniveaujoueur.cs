@@ -8,7 +8,7 @@ public class findeniveaujoueur : MonoBehaviour
         public Transform Pause;
 
         public bool isPaused;
-    void Update()
+    public void Update()
     {
         if (Input.GetKeyDown(KeyCode.M) && isPaused)
         {
