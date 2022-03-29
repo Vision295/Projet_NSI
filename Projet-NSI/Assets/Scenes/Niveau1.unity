@@ -221,11 +221,11 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1448676945}
         m_TargetAssemblyTypeName: Manager, Assembly-CSharp
-        m_MethodName: UnhoverResume
-        m_Mode: 1
+        m_MethodName: Unhover
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 1008171104}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -288,11 +288,11 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 1448676945}
           m_TargetAssemblyTypeName: Manager, Assembly-CSharp
-          m_MethodName: HoverResume
-          m_Mode: 1
+          m_MethodName: hover
+          m_Mode: 2
           m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_ObjectArgument: {fileID: 1008171104}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
@@ -304,11 +304,11 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 1448676945}
           m_TargetAssemblyTypeName: Manager, Assembly-CSharp
-          m_MethodName: UnhoverResume
-          m_Mode: 1
+          m_MethodName: Unhover
+          m_Mode: 2
           m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_ObjectArgument: {fileID: 1008171104}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
@@ -1013,11 +1013,11 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 1448676945}
           m_TargetAssemblyTypeName: Manager, Assembly-CSharp
-          m_MethodName: HoverExit
-          m_Mode: 1
+          m_MethodName: hover
+          m_Mode: 2
           m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_ObjectArgument: {fileID: 1866060350}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
@@ -1029,11 +1029,11 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 1448676945}
           m_TargetAssemblyTypeName: Manager, Assembly-CSharp
-          m_MethodName: UnhoverExit
-          m_Mode: 1
+          m_MethodName: Unhover
+          m_Mode: 2
           m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_ObjectArgument: {fileID: 1866060350}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
@@ -1484,6 +1484,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: pause
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 52fdbfffb74f63141bfefaf5c8d43e99, type: 3}
+      propertyPath: m_TagString
+      value: Pause
+      objectReference: {fileID: 0}
     - target: {fileID: 6745302439343835087, guid: 52fdbfffb74f63141bfefaf5c8d43e99, type: 3}
       propertyPath: m_ReceiveShadows
       value: 0
@@ -1760,7 +1764,7 @@ GameObject:
   - component: {fileID: 757532752}
   - component: {fileID: 757532751}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: "arriv\xE9"
   m_TagString: Finish
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2424,11 +2428,11 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 1448676945}
           m_TargetAssemblyTypeName: Manager, Assembly-CSharp
-          m_MethodName: HoverRetart
-          m_Mode: 1
+          m_MethodName: hover
+          m_Mode: 2
           m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_ObjectArgument: {fileID: 1400449112}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
@@ -2440,11 +2444,11 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 1448676945}
           m_TargetAssemblyTypeName: Manager, Assembly-CSharp
-          m_MethodName: UnhoverRestart
-          m_Mode: 1
+          m_MethodName: Unhover
+          m_Mode: 2
           m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_ObjectArgument: {fileID: 1400449112}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
@@ -2751,11 +2755,11 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 1448676945}
           m_TargetAssemblyTypeName: Manager, Assembly-CSharp
-          m_MethodName: HoverPause
-          m_Mode: 1
+          m_MethodName: hover
+          m_Mode: 2
           m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_ObjectArgument: {fileID: 1892252582}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
@@ -2767,11 +2771,11 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 1448676945}
           m_TargetAssemblyTypeName: Manager, Assembly-CSharp
-          m_MethodName: UnhoverPause
-          m_Mode: 1
+          m_MethodName: Unhover
+          m_Mode: 2
           m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_ObjectArgument: {fileID: 1892252582}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 

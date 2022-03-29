@@ -8,6 +8,7 @@ TagManager:
   - Bouton
   - Pierre
   - BonusVitesse
+  - Pause
   layers:
   - Default
   - TransparentFX
