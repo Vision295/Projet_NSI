@@ -9,6 +9,7 @@ TagManager:
   - Pierre
   - BonusVitesse
   - Pause
+  - Done
   layers:
   - Default
   - TransparentFX
