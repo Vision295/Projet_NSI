@@ -11,6 +11,9 @@ public class Début : MonoBehaviour
  
     public void restart()
     {  
+        GameObject button = GameObject.Find("Buttom"); 
+        button.SetActive(false);
         SceneManager.LoadScene("Niveau1");
+        Time.timeScale = 1f;
     }
 }   
