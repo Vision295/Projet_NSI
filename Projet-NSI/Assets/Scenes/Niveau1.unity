@@ -3233,8 +3233,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1448676946}
-  - component: {fileID: 1448676945}
   - component: {fileID: 1448676947}
+  - component: {fileID: 1448676945}
   m_Layer: 0
   m_Name: gui
   m_TagString: Untagged
