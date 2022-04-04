@@ -23,7 +23,7 @@ public class Manager : MonoBehaviour
         isPaused = false; //make sure isPaused is always false when our scene opens
         pause.gameObject.SetActive(true);
     }
-
+ 
     void Update ()
     {
         //If player presses escape and game is not paused. Pause game. If game is paused and player presses escape, unpause.
@@ -82,6 +82,8 @@ public class Manager : MonoBehaviour
         if(objet.tag == "Pause")
         {
             objet.transform.localScale = new Vector3(13, 10, 13);
+        } else if(objet.tag == "Restart"){
+            objet.transform.localScale = new Vector3(200, 200, 200);
         } else {
             objet.transform.localScale = new Vector3(2, 1.67f, 2);
         }
@@ -92,6 +94,8 @@ public class Manager : MonoBehaviour
         if(objet.tag == "Pause")
         {
             objet.transform.localScale = new Vector3(10, 10, 10);
+        } else if (objet.tag == "Restart") {
+            objet.transform.localScale = new Vector3(150, 150, 150);
         } else {
             objet.transform.localScale = new Vector3(1.67f, 1.67f, 1.67f);
         }
