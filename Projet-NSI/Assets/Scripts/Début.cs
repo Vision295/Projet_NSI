@@ -7,7 +7,7 @@ public class Début : MonoBehaviour
     void Start()
     {
         UIPanel.gameObject.SetActive(true);
-        GameObject button = GameObject.Find("Buttom"); 
+        GameObject button = GameObject.Find("Button"); 
         button.SetActive(false);
     }
  
