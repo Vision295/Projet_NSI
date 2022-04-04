@@ -10,6 +10,7 @@ TagManager:
   - BonusVitesse
   - Pause
   - Done
+  - Restart
   layers:
   - Default
   - TransparentFX
