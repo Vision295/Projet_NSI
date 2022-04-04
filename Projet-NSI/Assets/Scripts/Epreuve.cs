@@ -14,12 +14,6 @@ public class Epreuve : MonoBehaviour
         cs.epreuve = 0;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     void OnTriggerEnter(Collider other)
     {
         if(other.gameObject.tag == "Player" && gameObject.tag != "Done")
@@ -27,7 +21,6 @@ public class Epreuve : MonoBehaviour
             mesh.material = survole;
             gameObject.transform.tag = "Done";
             cs.epreuve += 1;
-            Debug.Log(cs.epreuve);
         }
     }
 }
