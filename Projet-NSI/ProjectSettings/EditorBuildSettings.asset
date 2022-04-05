@@ -6,13 +6,13 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: "Assets/Scenes/Menu d\xE9but.unity"
+    path: "Assets/Scenes/Gui/Menu d\xE9but.unity"
     guid: 984899146bb784647a53f6925b79356c
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
-    path: Assets/Scenes/Fin de niveau.unity
+    path: Assets/Scenes/Gui/Fin de niveau.unity
     guid: cfd66a10d43d4c44e8ba97f52bc3ad9c
   - enabled: 1
     path: Assets/Scenes/Niveaux/Niveau1.unity
@@ -21,7 +21,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Niveaux/Niveau2.unity
     guid: b2182b2c382dd9444a423afc97bfce40
   - enabled: 1
-    path: Assets/Scenes/Transition.unity
+    path: Assets/Scenes/Gui/Transition.unity
     guid: 4f1022bbbaa0c6f4586cd718ee535f60
   - enabled: 1
     path: Assets/Scenes/Niveaux/Niveau3.unity
