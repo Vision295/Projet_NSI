@@ -11,18 +11,25 @@ public class Transition : MonoBehaviour
         UIPanel.gameObject.SetActive(true);
     }
 
-    public void OnMouseUpAsButton() 
+    public void Niveau1() 
     {
         SceneManager.LoadScene("Niveau1");
     }
 
-    public void OnMouseUpAsButton2()
+    public void Niveau2()
     {
         SceneManager.LoadScene("Niveau2"); 
     }
 
-    public void OnMouseUpAsButton3() 
+    public void Niveau3() 
     {
         SceneManager.LoadScene("Niveau3");
-    }    
+    }
+
+    public void Niveauinfini()
+    {
+        SceneManager.LoadScene("Niveau infini");
+    }   
+
+
 }
