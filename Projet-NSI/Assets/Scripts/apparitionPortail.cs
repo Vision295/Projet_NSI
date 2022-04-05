@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class apparitionPortail : MonoBehaviour
 {
@@ -23,7 +24,7 @@ public class apparitionPortail : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
         if(other.tag == "Player" && cs.epreuve == 11){
-            Debug.Log("afficher écran de transition");
+            SceneManager.LoadScene("Transition");
         }
     }
 }

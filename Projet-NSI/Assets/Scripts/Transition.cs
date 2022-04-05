@@ -8,7 +8,7 @@ public class Transition : MonoBehaviour
         Transform UIPanel; 
     void Start()
     {
-        UIPanel.gameObject.SetActive (true);
+        UIPanel.gameObject.SetActive(true);
     }
 
     public void OnMouseUpAsButton() 
