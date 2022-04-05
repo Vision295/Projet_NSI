@@ -190,6 +190,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &585283680 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 32b5642cdf83c474bbfcc59672cac8b4, type: 3}
+  m_PrefabInstance: {fileID: 1434435090}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &622548400 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: f5cb9b4b1c2d34d429a231b412305b69, type: 3}
@@ -274,6 +279,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 836cbedc1e2029747bb7eb221ccda93a, type: 3}
       propertyPath: m_Name
       value: cadre
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 836cbedc1e2029747bb7eb221ccda93a, type: 3}
+      propertyPath: m_TagString
+      value: Findeniveau
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 836cbedc1e2029747bb7eb221ccda93a, type: 3}
@@ -367,9 +376,10 @@ GameObject:
   - component: {fileID: 878445958}
   - component: {fileID: 878445957}
   - component: {fileID: 878445956}
+  - component: {fileID: 878445959}
   m_Layer: 5
   m_Name: Menu
-  m_TagString: Untagged
+  m_TagString: Findeniveau
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -488,6 +498,56 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 878445954}
   m_CullTransparentMesh: 1
+--- !u!114 &878445959
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 878445954}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 7647771320067933160}
+          m_TargetAssemblyTypeName: Manager, Assembly-CSharp
+          m_MethodName: hover
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 585283680}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 7647771320067933160}
+          m_TargetAssemblyTypeName: Manager, Assembly-CSharp
+          m_MethodName: Unhover
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 585283680}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!1 &927986985 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: f5cb9b4b1c2d34d429a231b412305b69, type: 3}
+  m_PrefabInstance: {fileID: 2008349321}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1308393557
 GameObject:
   m_ObjectHideFlags: 0
@@ -635,6 +695,10 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -8161950527090963016, guid: 32b5642cdf83c474bbfcc59672cac8b4, type: 3}
+      propertyPath: m_TagString
+      value: Findeniveau
+      objectReference: {fileID: 0}
     - target: {fileID: -8035857614479882688, guid: 32b5642cdf83c474bbfcc59672cac8b4, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.65
@@ -658,6 +722,18 @@ PrefabInstance:
     - target: {fileID: -7824753648676844136, guid: 32b5642cdf83c474bbfcc59672cac8b4, type: 3}
       propertyPath: m_LocalPosition.z
       value: -1.15
+      objectReference: {fileID: 0}
+    - target: {fileID: -7640558969779515294, guid: 32b5642cdf83c474bbfcc59672cac8b4, type: 3}
+      propertyPath: m_TagString
+      value: Findeniveau
+      objectReference: {fileID: 0}
+    - target: {fileID: -7146521406498821007, guid: 32b5642cdf83c474bbfcc59672cac8b4, type: 3}
+      propertyPath: m_TagString
+      value: Findeniveau
+      objectReference: {fileID: 0}
+    - target: {fileID: -6763858364670572316, guid: 32b5642cdf83c474bbfcc59672cac8b4, type: 3}
+      propertyPath: m_TagString
+      value: Findeniveau
       objectReference: {fileID: 0}
     - target: {fileID: -3891034280253770263, guid: 32b5642cdf83c474bbfcc59672cac8b4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -707,6 +783,14 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0.3
       objectReference: {fileID: 0}
+    - target: {fileID: -2045257923548263128, guid: 32b5642cdf83c474bbfcc59672cac8b4, type: 3}
+      propertyPath: m_TagString
+      value: Findeniveau
+      objectReference: {fileID: 0}
+    - target: {fileID: -1599826595754709761, guid: 32b5642cdf83c474bbfcc59672cac8b4, type: 3}
+      propertyPath: m_TagString
+      value: Findeniveau
+      objectReference: {fileID: 0}
     - target: {fileID: -1255605710908113952, guid: 32b5642cdf83c474bbfcc59672cac8b4, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.12
@@ -731,13 +815,29 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -516098083770646512, guid: 32b5642cdf83c474bbfcc59672cac8b4, type: 3}
+      propertyPath: m_TagString
+      value: Findeniveau
+      objectReference: {fileID: 0}
+    - target: {fileID: -466329591000292508, guid: 32b5642cdf83c474bbfcc59672cac8b4, type: 3}
+      propertyPath: m_TagString
+      value: Findeniveau
+      objectReference: {fileID: 0}
+    - target: {fileID: -208595431880416365, guid: 32b5642cdf83c474bbfcc59672cac8b4, type: 3}
+      propertyPath: m_TagString
+      value: Findeniveau
+      objectReference: {fileID: 0}
+    - target: {fileID: 281855664364225751, guid: 32b5642cdf83c474bbfcc59672cac8b4, type: 3}
+      propertyPath: m_TagString
+      value: Findeniveau
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 32b5642cdf83c474bbfcc59672cac8b4, type: 3}
       propertyPath: m_Name
       value: bouttonMenu
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 32b5642cdf83c474bbfcc59672cac8b4, type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: Findeniveau
       objectReference: {fileID: 0}
     - target: {fileID: 4083501151425157549, guid: 32b5642cdf83c474bbfcc59672cac8b4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -799,6 +899,18 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -1.15
       objectReference: {fileID: 0}
+    - target: {fileID: 8009987137999418058, guid: 32b5642cdf83c474bbfcc59672cac8b4, type: 3}
+      propertyPath: m_TagString
+      value: Findeniveau
+      objectReference: {fileID: 0}
+    - target: {fileID: 8416272007918961125, guid: 32b5642cdf83c474bbfcc59672cac8b4, type: 3}
+      propertyPath: m_TagString
+      value: Findeniveau
+      objectReference: {fileID: 0}
+    - target: {fileID: 8485173162082002552, guid: 32b5642cdf83c474bbfcc59672cac8b4, type: 3}
+      propertyPath: m_TagString
+      value: Findeniveau
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 32b5642cdf83c474bbfcc59672cac8b4, type: 3}
 --- !u!1001 &1538888014
@@ -814,15 +926,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9aa9769ff83b64248a6b19608f9d01a3, type: 3}
       propertyPath: m_LocalScale.x
-      value: 15.299997
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9aa9769ff83b64248a6b19608f9d01a3, type: 3}
       propertyPath: m_LocalScale.y
-      value: 15.299992
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9aa9769ff83b64248a6b19608f9d01a3, type: 3}
       propertyPath: m_LocalScale.z
-      value: 15.299946
+      value: 15.999946
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9aa9769ff83b64248a6b19608f9d01a3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -872,11 +984,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: niveauSuivant
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9aa9769ff83b64248a6b19608f9d01a3, type: 3}
+      propertyPath: m_TagString
+      value: Findeniveau
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9aa9769ff83b64248a6b19608f9d01a3, type: 3}
 --- !u!4 &1538888015 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 9aa9769ff83b64248a6b19608f9d01a3, type: 3}
+  m_PrefabInstance: {fileID: 1538888014}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1592961122 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 9aa9769ff83b64248a6b19608f9d01a3, type: 3}
   m_PrefabInstance: {fileID: 1538888014}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1625819567
@@ -1171,6 +1292,7 @@ GameObject:
   - component: {fileID: 1901888220}
   - component: {fileID: 1901888219}
   - component: {fileID: 1901888221}
+  - component: {fileID: 1901888222}
   m_Layer: 5
   m_Name: 'Niveau suivant '
   m_TagString: Untagged
@@ -1292,6 +1414,51 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &1901888222
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1901888216}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 7647771320067933160}
+          m_TargetAssemblyTypeName: Manager, Assembly-CSharp
+          m_MethodName: hover
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 1592961122}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 7647771320067933160}
+          m_TargetAssemblyTypeName: Manager, Assembly-CSharp
+          m_MethodName: Unhover
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 1592961122}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1001 &2008349321
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1305,15 +1472,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f5cb9b4b1c2d34d429a231b412305b69, type: 3}
       propertyPath: m_LocalScale.x
-      value: 16.270004
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f5cb9b4b1c2d34d429a231b412305b69, type: 3}
       propertyPath: m_LocalScale.y
-      value: 16.259672
+      value: 15.989839
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f5cb9b4b1c2d34d429a231b412305b69, type: 3}
       propertyPath: m_LocalScale.z
-      value: 16.26996
+      value: 15.999956
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f5cb9b4b1c2d34d429a231b412305b69, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1359,6 +1526,30 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -8161950527090963016, guid: f5cb9b4b1c2d34d429a231b412305b69, type: 3}
+      propertyPath: m_TagString
+      value: Findeniveau
+      objectReference: {fileID: 0}
+    - target: {fileID: -7640558969779515294, guid: f5cb9b4b1c2d34d429a231b412305b69, type: 3}
+      propertyPath: m_TagString
+      value: Findeniveau
+      objectReference: {fileID: 0}
+    - target: {fileID: -7146521406498821007, guid: f5cb9b4b1c2d34d429a231b412305b69, type: 3}
+      propertyPath: m_TagString
+      value: Findeniveau
+      objectReference: {fileID: 0}
+    - target: {fileID: -1599826595754709761, guid: f5cb9b4b1c2d34d429a231b412305b69, type: 3}
+      propertyPath: m_TagString
+      value: Findeniveau
+      objectReference: {fileID: 0}
+    - target: {fileID: -466329591000292508, guid: f5cb9b4b1c2d34d429a231b412305b69, type: 3}
+      propertyPath: m_TagString
+      value: Findeniveau
+      objectReference: {fileID: 0}
+    - target: {fileID: -208595431880416365, guid: f5cb9b4b1c2d34d429a231b412305b69, type: 3}
+      propertyPath: m_TagString
+      value: Findeniveau
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: f5cb9b4b1c2d34d429a231b412305b69, type: 3}
       propertyPath: m_Name
       value: rejouer
@@ -1369,7 +1560,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: f5cb9b4b1c2d34d429a231b412305b69, type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: Findeniveau
+      objectReference: {fileID: 0}
+    - target: {fileID: 1700632255236584042, guid: f5cb9b4b1c2d34d429a231b412305b69, type: 3}
+      propertyPath: m_TagString
+      value: Findeniveau
+      objectReference: {fileID: 0}
+    - target: {fileID: 8416272007918961125, guid: f5cb9b4b1c2d34d429a231b412305b69, type: 3}
+      propertyPath: m_TagString
+      value: Findeniveau
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f5cb9b4b1c2d34d429a231b412305b69, type: 3}
@@ -1384,10 +1583,12 @@ GameObject:
   - component: {fileID: 2057702284}
   - component: {fileID: 2057702287}
   - component: {fileID: 2057702286}
+  - component: {fileID: 2057702289}
   - component: {fileID: 2057702285}
+  - component: {fileID: 2057702288}
   m_Layer: 5
   m_Name: Rejouer
-  m_TagString: Untagged
+  m_TagString: Findeniveau
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1506,6 +1707,64 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2057702283}
   m_CullTransparentMesh: 1
+--- !u!114 &2057702288
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2057702283}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 7647771320067933160}
+          m_TargetAssemblyTypeName: Manager, Assembly-CSharp
+          m_MethodName: hover
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 927986985}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 7647771320067933160}
+          m_TargetAssemblyTypeName: Manager, Assembly-CSharp
+          m_MethodName: Unhover
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 927986985}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!114 &2057702289
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2057702283}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates: []
 --- !u!1001 &7647771320067933157
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1598,3 +1857,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   UIPanel: {fileID: 1308393558}
+--- !u!114 &7647771320067933160
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7647771320067933158}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a972683962e5a7e4c9b5deb463df5e63, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UIPanel: {fileID: 1308393558}
+  pause: {fileID: 0}
+  isPaused: 0
+  cam: {fileID: 1632687469}
