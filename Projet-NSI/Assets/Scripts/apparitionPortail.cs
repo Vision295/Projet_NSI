@@ -24,7 +24,7 @@ public class apparitionPortail : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
         if(other.tag == "Player" && cs.epreuve == 11){
-            SceneManager.LoadScene("Transition");
+            SceneManager.LoadScene("Fin de niveau");
         }
     }
 }

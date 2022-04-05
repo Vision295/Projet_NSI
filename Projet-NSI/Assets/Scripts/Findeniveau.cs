@@ -15,7 +15,6 @@ public class findeniveau : MonoBehaviour
 
     {
         SceneManager.LoadScene("Niveau2");
-        Debug.Log("test");     
     }
     public void Rejouer()
 
