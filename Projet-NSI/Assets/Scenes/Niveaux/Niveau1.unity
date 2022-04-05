@@ -332,7 +332,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   survole: {fileID: 2100000, guid: 3cdfe6697171b7b4ebec892581b5113b, type: 2}
-  cs: {fileID: 0}
+  cs: {fileID: 1771482140}
 --- !u!65 &25715634
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1021,7 +1021,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   survole: {fileID: 2100000, guid: 3cdfe6697171b7b4ebec892581b5113b, type: 2}
-  cs: {fileID: 0}
+  cs: {fileID: 1771482140}
 --- !u!65 &344035247
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1470,7 +1470,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   survole: {fileID: 2100000, guid: 3cdfe6697171b7b4ebec892581b5113b, type: 2}
-  cs: {fileID: 0}
+  cs: {fileID: 1771482140}
 --- !u!65 &467381604
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1679,7 +1679,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   survole: {fileID: 2100000, guid: 3cdfe6697171b7b4ebec892581b5113b, type: 2}
-  cs: {fileID: 0}
+  cs: {fileID: 1771482140}
 --- !u!65 &659677790
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1711,7 +1711,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   survole: {fileID: 2100000, guid: 3cdfe6697171b7b4ebec892581b5113b, type: 2}
-  cs: {fileID: 0}
+  cs: {fileID: 1771482140}
 --- !u!65 &678503306
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2050,7 +2050,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   survole: {fileID: 2100000, guid: 3cdfe6697171b7b4ebec892581b5113b, type: 2}
-  cs: {fileID: 0}
+  cs: {fileID: 1771482140}
 --- !u!65 &974640289
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2182,7 +2182,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   survole: {fileID: 2100000, guid: 3cdfe6697171b7b4ebec892581b5113b, type: 2}
-  cs: {fileID: 0}
+  cs: {fileID: 1771482140}
 --- !u!65 &1039296857
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3048,7 +3048,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   survole: {fileID: 2100000, guid: 3cdfe6697171b7b4ebec892581b5113b, type: 2}
-  cs: {fileID: 0}
+  cs: {fileID: 1771482140}
 --- !u!65 &1448477650
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3526,7 +3526,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   survole: {fileID: 2100000, guid: 3cdfe6697171b7b4ebec892581b5113b, type: 2}
-  cs: {fileID: 0}
+  cs: {fileID: 1771482140}
 --- !u!65 &1629885061
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3770,7 +3770,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   survole: {fileID: 2100000, guid: 3cdfe6697171b7b4ebec892581b5113b, type: 2}
-  cs: {fileID: 0}
+  cs: {fileID: 1771482140}
 --- !u!65 &1704046944
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4091,7 +4091,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   survole: {fileID: 2100000, guid: 3cdfe6697171b7b4ebec892581b5113b, type: 2}
-  cs: {fileID: 0}
+  cs: {fileID: 1771482140}
 --- !u!65 &2113242512
 BoxCollider:
   m_ObjectHideFlags: 0
