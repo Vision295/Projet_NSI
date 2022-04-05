@@ -15,8 +15,6 @@ public class Manager : MonoBehaviour
     public Camera cam;
     private Vector3 posCam;
     private Quaternion rotationCam;
-    public GameObject bouttonPause, bouttonResume, bouttonRestart, bouttonExit;
-
     void Start ()
     {
         UIPanel.gameObject.SetActive(false); //fait en sorte que le menu ne se voit pas lors du lancement de la scène
@@ -84,6 +82,8 @@ public class Manager : MonoBehaviour
             objet.transform.localScale = new Vector3(13, 10, 13);
         } else if(objet.tag == "Restart"){
             objet.transform.localScale = new Vector3(200, 200, 200);
+        } else if(objet.tag == "Findeniveau"){
+            objet.transform.localScale = new Vector3(20, 20, 20);
         } else {
             objet.transform.localScale = new Vector3(2, 1.67f, 2);
         }
@@ -96,6 +96,8 @@ public class Manager : MonoBehaviour
             objet.transform.localScale = new Vector3(10, 10, 10);
         } else if (objet.tag == "Restart") {
             objet.transform.localScale = new Vector3(150, 150, 150);
+        } else if(objet.tag == "Findeniveau"){
+            objet.transform.localScale = new Vector3(16, 16, 16);
         } else {
             objet.transform.localScale = new Vector3(1.67f, 1.67f, 1.67f);
         }
