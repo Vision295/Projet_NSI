@@ -8,22 +8,22 @@ public class findeniveau : MonoBehaviour
 
         Transform UIPanel;
     void Start ()
-
     {
         UIPanel.gameObject.SetActive(true); 
     }
-    public void OnMouseUpAsButton()
+    public void NiveauSuivant()
 
     {
-        SceneManager.LoadScene("Niveau2");     
+        SceneManager.LoadScene("Niveau2");
+        Debug.Log("test");     
     }
-    public void OnMouseUpAsButton2()
+    public void Rejouer()
 
     {
         SceneManager.LoadScene("Niveau1");
     }
 
-    public void OnMouseUpAsButton3()
+    public void Menu()
     {
         SceneManager.LoadScene("SampleScene");
     }        
