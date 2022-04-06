@@ -22,7 +22,6 @@ public class Manager : MonoBehaviour
             UIPanel.gameObject.SetActive(false); //fait en sorte que le menu ne se voit pas lors du lancement de la scène
         }
         isPaused = false; //make sure isPaused is always false when our scene opens
-        //pause.gameObject.SetActive(true);
     }
  
     void Update ()
