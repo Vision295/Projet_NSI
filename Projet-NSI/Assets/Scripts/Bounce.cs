@@ -4,9 +4,12 @@ using UnityEngine;
 
 public class Bounce : MonoBehaviour
 {
-    public GameObject joueur;
-    void OnCollisionEnter (Collision type) 
+    public DeplacementJoueur joueur;
+    void OnControllerColliderHit(ControllerColliderHit hit) 
     {
-        joueur.GetComponent<Rigidbody>().AddForce(Vector3.up * 2000f, ForceMode.Impulse);
+        if(hit.gameObject.tag == "Bounce")
+        {
+            joueur.trampo = true; // utiliser Invoke
+        }
     }
 }

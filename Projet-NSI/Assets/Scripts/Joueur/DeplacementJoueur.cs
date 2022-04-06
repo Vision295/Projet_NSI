@@ -7,7 +7,7 @@ public class DeplacementJoueur : MonoBehaviour
     private float horizontalInput, verticalInput;
     public float[] speed;
     private CharacterController cc;
-    private bool isGrounded, inputJump;
+    public bool trampo, inputJump;
     private Vector3 mouvement;
     private float gravity = 9.18f, directionY; 
     
@@ -35,7 +35,7 @@ public class DeplacementJoueur : MonoBehaviour
         // La touche espace (space) pour sauter 
         inputJump = Input.GetKeyDown(KeyCode.Space);
         
-        if (inputJump && cc.isGrounded)
+        if ((inputJump && cc.isGrounded) || trampo)
         {
             directionY = speed[1];
         }
