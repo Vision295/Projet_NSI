@@ -17,7 +17,7 @@ public class PopManager : MonoBehaviour
     }
 
     // Update is called once per frame
-    void PopRandomPF()
+    void PopRandomPF(GameObject précédente)
     {
         int PFIndex = Random.Range(0, listePF.Length);
         Vector3 spawnPosition = new Vector3(Random.Range(-spawnRangeX, spawnRangeX), 0, spawnPositionZ);
