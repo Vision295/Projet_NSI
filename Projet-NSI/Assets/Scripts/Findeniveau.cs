@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class findeniveau : MonoBehaviour
+public class Findeniveau : MonoBehaviour
 {
         
         [SerializeField]
