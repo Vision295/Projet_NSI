@@ -477,6 +477,26 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 3098102616669099027, guid: fb6736a32119dba41b678366ea4f377f, type: 3}
+--- !u!114 &288514708
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1936033638}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc12e28b93123aa47b0ab4701f387efd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  listePF: []
+  positionX: 95
+  positionY: 60
+  positionZ: 6
+  ecartZ: 10
+  PFIndex: 0
+  startDelay: 5
+  spawnInterval: 5
 --- !u!1001 &349430936
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -612,7 +632,7 @@ GameObject:
   - component: {fileID: 428854604}
   m_Layer: 0
   m_Name: gui
-  m_TagString: Untagged
+  m_TagString: Menu
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -649,7 +669,7 @@ Transform:
   - {fileID: 1321528079}
   - {fileID: 2111699561}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &521727372 stripped
 GameObject:
@@ -784,7 +804,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &726546954
 PrefabInstance:
@@ -1064,6 +1084,8 @@ MonoBehaviour:
   - 3
   - 5
   - 2
+  trampo: 0
+  inputJump: 0
 --- !u!114 &880483539
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1125,7 +1147,7 @@ GameObject:
   - component: {fileID: 903767246}
   m_Layer: 5
   m_Name: Panel
-  m_TagString: Untagged
+  m_TagString: Menu
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1575,7 +1597,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -7}
+  m_AnchoredPosition: {x: 0, y: -6.9999847}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1322687860
@@ -2405,7 +2427,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: fb6736a32119dba41b678366ea4f377f, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fb6736a32119dba41b678366ea4f377f, type: 3}
       propertyPath: m_LocalPosition.x
