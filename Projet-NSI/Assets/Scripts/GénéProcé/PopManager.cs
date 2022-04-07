@@ -27,10 +27,10 @@ public class PopManager : MonoBehaviour
     }
 
     // Update is called once per frame
-    void PopRandomPF(GameObject précédente)
+    void PopRandomPF()
     {
         positionX = positionX - 25;
-        positionY = positionY + 8*Random.Range(0, 1)-4;
+        positionY = positionY + 4;
         positionZ = positionZ + Random.Range(-ecartZ, ecartZ);
         Vector3 spawnPosition = new Vector3(positionX, positionY, positionZ);
 
@@ -38,6 +38,6 @@ public class PopManager : MonoBehaviour
         Debug.Log(positionX);
         Debug.Log(positionY);
         Debug.Log(positionZ);
-        // Instantiate(listePF[PFIndex], spawnPosition, listePF[PFIndex].transform.rotation);
+        Instantiate(listePF[PFIndex], spawnPosition, listePF[PFIndex].transform.rotation);
     }
 }
