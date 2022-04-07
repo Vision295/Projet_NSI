@@ -19,12 +19,7 @@ public class PopManager : MonoBehaviour
     // à changer
     public float startDelay = 5;
     public float spawnInterval = 5;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        InvokeRepeating("PopRandomPF", startDelay, spawnInterval);
-    }
+    public bool destroy;
 
     // Update is called once per frame
     void PopRandomPF()
@@ -35,9 +30,18 @@ public class PopManager : MonoBehaviour
         Vector3 spawnPosition = new Vector3(positionX, positionY, positionZ);
 
         PFIndex = Random.Range(0, listePF.Length);
-        Debug.Log(positionX);
-        Debug.Log(positionY);
-        Debug.Log(positionZ);
         Instantiate(listePF[PFIndex], spawnPosition, listePF[PFIndex].transform.rotation);
+    }
+
+    
+    void OnControllerColliderHit(ControllerColliderHit hit) 
+    {
+        
+        if(hit.gameObject.tag == "Plateforme")
+        {
+            PopRandomPF();
+            destroy = true;
+            hit.gameObject.tag = "Done";
+        }
     }
 }
