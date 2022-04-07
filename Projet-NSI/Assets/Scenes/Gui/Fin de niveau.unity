@@ -448,8 +448,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7647771320067933159}
-        m_TargetAssemblyTypeName: findeniveau, Assembly-CSharp
+      - m_Target: {fileID: 7647771320067933162}
+        m_TargetAssemblyTypeName: Findeniveau, Assembly-CSharp
         m_MethodName: Menu
         m_Mode: 1
         m_Arguments:
@@ -1402,8 +1402,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7647771320067933159}
-        m_TargetAssemblyTypeName: findeniveau, Assembly-CSharp
+      - m_Target: {fileID: 7647771320067933162}
+        m_TargetAssemblyTypeName: Findeniveau, Assembly-CSharp
         m_MethodName: NiveauSuivant
         m_Mode: 1
         m_Arguments:
@@ -1583,7 +1583,6 @@ GameObject:
   - component: {fileID: 2057702284}
   - component: {fileID: 2057702287}
   - component: {fileID: 2057702286}
-  - component: {fileID: 2057702289}
   - component: {fileID: 2057702285}
   - component: {fileID: 2057702288}
   m_Layer: 5
@@ -1657,8 +1656,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7647771320067933159}
-        m_TargetAssemblyTypeName: findeniveau, Assembly-CSharp
+      - m_Target: {fileID: 7647771320067933162}
+        m_TargetAssemblyTypeName: Findeniveau, Assembly-CSharp
         m_MethodName: Rejouer
         m_Mode: 1
         m_Arguments:
@@ -1752,19 +1751,6 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
---- !u!114 &2057702289
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2057702283}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates: []
 --- !u!1001 &7647771320067933157
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1844,19 +1830,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 7647771318337514218, guid: 5bdde334db482454ba710d9725f128dd, type: 3}
   m_PrefabInstance: {fileID: 7647771320067933157}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &7647771320067933159
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7647771320067933158}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b148f442bfd770b40aa9c25e239a833e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  UIPanel: {fileID: 1308393558}
 --- !u!114 &7647771320067933160
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1873,3 +1846,16 @@ MonoBehaviour:
   pause: {fileID: 0}
   isPaused: 0
   cam: {fileID: 1632687469}
+--- !u!114 &7647771320067933162
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7647771320067933158}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b148f442bfd770b40aa9c25e239a833e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UIPanel: {fileID: 1308393558}

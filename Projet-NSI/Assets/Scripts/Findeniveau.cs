@@ -6,7 +6,7 @@ public class Findeniveau : MonoBehaviour
         
         [SerializeField]
 
-        Transform UIPanel;
+        public Transform UIPanel;
     void Start ()
     {
         UIPanel.gameObject.SetActive(true); 
