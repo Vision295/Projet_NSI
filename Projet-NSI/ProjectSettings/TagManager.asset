@@ -12,6 +12,8 @@ TagManager:
   - Done
   - Restart
   - Findeniveau
+  - Menu
+  - Bounce
   layers:
   - Default
   - TransparentFX

@@ -19,7 +19,7 @@ public class PopManager : MonoBehaviour
     }
 
     // Update is called once per frame
-    void PopRandomPF()
+    void PopRandomPF(GameObject précédente)
     {
         // positionX = positionX - 25;
         // positionY = positionY + 8*Random.Range(0, 1)-4;

@@ -4,9 +4,19 @@ using UnityEngine;
 
 public class Bounce : MonoBehaviour
 {
-    public GameObject joueur;
-    void OnCollisionEnter (Collision type) 
+    public DeplacementJoueur joueur;
+    public int test;
+    void OnControllerColliderHit(ControllerColliderHit hit) 
     {
-        joueur.GetComponent<Rigidbody>().AddForce(Vector3.up * 2000f, ForceMode.Impulse);
+        if(hit.gameObject.tag == "Bounce")
+        {
+            joueur.trampo = true;
+            Invoke("Trampo", 0.3f);
+        }
+    }
+
+    void Trampo()
+    {
+        joueur.trampo = false;
     }
 }
