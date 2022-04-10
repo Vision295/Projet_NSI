@@ -1936,6 +1936,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2668013561893866559, guid: 232b21e0e1204c24fb21c42b92662741, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5874845104648067039, guid: 232b21e0e1204c24fb21c42b92662741, type: 3}
       propertyPath: m_Name
       value: robolaby
@@ -1982,6 +1986,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6542732810636873061, guid: 232b21e0e1204c24fb21c42b92662741, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6721285644190888248, guid: 232b21e0e1204c24fb21c42b92662741, type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

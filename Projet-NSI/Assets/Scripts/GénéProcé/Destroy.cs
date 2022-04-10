@@ -5,7 +5,7 @@ using UnityEngine;
 public class Destroy : MonoBehaviour
 {
     public PopManager popmanag;
-    void Detruit(GameObject gameObject)
+    void Detruit()
     {
         Destroy(gameObject);
     }

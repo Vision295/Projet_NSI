@@ -26,7 +26,7 @@ public class PopManager : MonoBehaviour
     {
         positionX = positionX - 25;
         positionY = positionY + 4;
-        positionZ = positionZ + Random.Range(-ecartZ, ecartZ);
+        positionZ = positionZ + Random.Range(1, 3) * Random.Range(-1, 2) * 10;
         Vector3 spawnPosition = new Vector3(positionX, positionY, positionZ);
 
         PFIndex = Random.Range(0, listePF.Length);
