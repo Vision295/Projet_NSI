@@ -6,13 +6,13 @@ public class Epreuve : MonoBehaviour
 {
     private MeshRenderer mesh;
     public Material survole;
-    public int epreuve;
+    public CalculeScore cs;
 
     // Start is called before the first frame update
     void Start()
     {
         mesh = gameObject.GetComponent<MeshRenderer>();
-        epreuve = 0;
+        cs.epreuve = 0;
     }
 
     void OnTriggerEnter(Collider other)
@@ -21,7 +21,7 @@ public class Epreuve : MonoBehaviour
         {
             mesh.material = survole;
             gameObject.transform.tag = "Done";
-            epreuve += 1;
+            cs.epreuve += 1;
         }
     }
 }
