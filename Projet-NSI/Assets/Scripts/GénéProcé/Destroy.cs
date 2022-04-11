@@ -5,18 +5,9 @@ using UnityEngine;
 public class Destroy : MonoBehaviour
 {
     public PopManager popmanag;
-    void Detruit()
-    {
-        Destroy(gameObject);
-    }
-
     // Update is called once per frame
     void Update()
     {
-        if(popmanag.destroy)
-        {
-            popmanag.destroy = false;
-            Invoke("Detruit", 5f);
-        }
+        Destroy(gameObject, 5);
     }
 }
