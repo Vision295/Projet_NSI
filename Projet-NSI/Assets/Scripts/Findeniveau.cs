@@ -14,12 +14,34 @@ public class Findeniveau : MonoBehaviour
     public void NiveauSuivant()
 
     {
-        SceneManager.LoadScene("Niveau2");
+       ///if(SceneManager.SetActiveScene('Niveau1'))
+      /// {
+            SceneManager.LoadScene("Niveau2");
+      /// }
+        ///else if (SceneManager.SetActiveScene('Niveau2'))
+        ///{
+            ///SceneManager.LoadScene("Niveau3");
+       /// }
+        ///else 
+        ///{
+            ///SceneManager.LoadScene("NiveauInfini");
+       /// }
     }
     public void Rejouer()
 
     {
-        SceneManager.LoadScene("Niveau1");
+        ///if(SceneManager.SetActiveScene('Niveau1'))
+        ///{
+            SceneManager.LoadScene("Niveau1");
+        ///}
+        ///else if (SceneManager.SetActiveScene('Niveau2'))
+        ///{
+            ///SceneManager.LoadScene("Niveau2");
+       /// }
+        ///else 
+        ///{
+            ///SceneManager.LoadScene("Niveau3");
+       /// }
     }
 
     public void Menu()
