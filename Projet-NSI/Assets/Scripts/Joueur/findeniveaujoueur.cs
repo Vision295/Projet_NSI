@@ -5,9 +5,9 @@ public class findeniveaujoueur : MonoBehaviour
 {
         [SerializeField]
 
-        public Transform Pause;
+    public Transform Pause;
 
-        public bool isPaused;
+    public bool isPaused;
     public void Update()
     {
         if (Input.GetKeyDown(KeyCode.M) && isPaused)
