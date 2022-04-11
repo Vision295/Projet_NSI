@@ -7,13 +7,11 @@ public class Début : MonoBehaviour
     void Start()
     {
         UIPanel.gameObject.SetActive(true);
-        GameObject button = GameObject.Find("Button"); 
-        button.SetActive(false);
-        Time.timeScale = 1f;
     }
  
     public void Restart()
     {  
         SceneManager.LoadScene("Niveau1");
+        Debug.Log("a");
     }
 }   
