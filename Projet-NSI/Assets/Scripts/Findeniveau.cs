@@ -24,6 +24,6 @@ public class Findeniveau : MonoBehaviour
 
     public void Menu()
     {
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene("Transition");
     }        
 }
