@@ -21,11 +21,22 @@ public class PopManager : MonoBehaviour
     public float spawnInterval = 5;
     public bool destroy;
 
+    public DeplacementJoueur DJ;
+    private float exp;
+
+    void Start()
+    { 
+        DJ = GetComponent<DeplacementJoueur>();
+    }
+
     // Update is called once per frame
     void PopRandomPF()
     {
-        positionX = positionX - 25;
-        positionY = positionY + 4;
+        DJ.speed[0] += 0.25f;
+        DJ.speed[2] += 0.25f;
+
+        positionX = positionX - 7 * 2 * Mathf.Log(DJ.speed[0], 2);
+        positionY = positionY + 4 * Random.Range(-1, 2);
         positionZ = positionZ + Random.Range(1, 3) * Random.Range(-1, 2) * 10;
         Vector3 spawnPosition = new Vector3(positionX, positionY, positionZ);
 
