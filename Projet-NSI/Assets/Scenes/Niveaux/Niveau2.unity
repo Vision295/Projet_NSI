@@ -1390,6 +1390,20 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -5252749991830521118, guid: 28fe1dd86c02ea44aa362b58f60ac614, type: 3}
+--- !u!114 &955670206
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 955670198}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b572330df65df344b9098f211e30169, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 5
+  spaceInterval: 10
 --- !u!1 &986519079 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 341993246928539004, guid: 28fe1dd86c02ea44aa362b58f60ac614, type: 3}
@@ -2929,6 +2943,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   joueur: {fileID: 1746081232}
+  test: 0
 --- !u!64 &1760256470
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3062,6 +3077,20 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 3509988904943722406, guid: 28fe1dd86c02ea44aa362b58f60ac614, type: 3}
+--- !u!114 &1856666381
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1856666373}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b572330df65df344b9098f211e30169, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 5
+  spaceInterval: 10
 --- !u!64 &1865980940
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3152,6 +3181,20 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -2228417370725966487, guid: 28fe1dd86c02ea44aa362b58f60ac614, type: 3}
+--- !u!114 &1939704134
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1939704126}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4d3d861d601a2c43a04c97c5b78dcdf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 5
+  spaceInterval: 10
 --- !u!1001 &1994506264
 PrefabInstance:
   m_ObjectHideFlags: 0

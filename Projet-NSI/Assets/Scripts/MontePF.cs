@@ -4,13 +4,12 @@ using UnityEngine;
 
 public class MontePF : MonoBehaviour
 {
-    private float moveSpeed = 1.0f;
+    public float moveSpeed = 1.0f;
     private int allezRetour = 0;
     public float spaceInterval = 10.0f;
-    public float downLimit;
-    public float upLimit;
+    private float downLimit;
+    private float upLimit;
 
-    // Update is called once per frame
     void Start()
     {
         downLimit = transform.position.y - spaceInterval;
@@ -33,6 +32,6 @@ public class MontePF : MonoBehaviour
         } else if (allezRetour == 1)
         {
             transform.Translate(Vector3.down * moveSpeed * Time.deltaTime);
-        }        
+        }
     }
 }
