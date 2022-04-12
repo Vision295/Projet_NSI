@@ -16,11 +16,6 @@ public class PopManager : MonoBehaviour
     public float ecartZ = 10;
     public int PFIndex;
     
-    // à changer
-    public float startDelay = 5;
-    public float spawnInterval = 5;
-    public bool destroy;
-
     public DeplacementJoueur DJ;
     private float exp;
 
@@ -35,9 +30,9 @@ public class PopManager : MonoBehaviour
         DJ.speed[0] += 0.25f;
         DJ.speed[2] += 0.25f;
 
-        positionX = positionX - 7 * 2 * Mathf.Log(DJ.speed[0], 2);
-        positionY = positionY + 4 * Random.Range(-1, 2);
-        positionZ = positionZ + Random.Range(1, 3) * Random.Range(-1, 2) * 10;
+        positionX -= 7 * 2 * Mathf.Log(DJ.speed[0], 2);
+        positionY += + 4 * Random.Range(-1, 2);
+        positionZ += + Random.Range(-2, 3) * 7;
         Vector3 spawnPosition = new Vector3(positionX, positionY, positionZ);
 
         PFIndex = Random.Range(0, listePF.Length);
@@ -51,7 +46,6 @@ public class PopManager : MonoBehaviour
         if(hit.gameObject.tag == "Plateforme")
         {
             PopRandomPF();
-            destroy = true;
             hit.gameObject.tag = "Done";
         }
     }

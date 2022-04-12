@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class Destroy : MonoBehaviour
 {
-    public PopManager popmanag;
+    public int lifeTime = 10;
+
     // Update is called once per frame
     void Update()
     {
-        Destroy(gameObject, 5);
+        Destroy(gameObject, lifeTime);
     }
 }
