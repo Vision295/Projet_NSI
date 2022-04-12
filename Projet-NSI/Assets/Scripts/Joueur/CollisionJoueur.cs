@@ -6,7 +6,7 @@ public class CollisionJoueur : MonoBehaviour
 {
     // stocke les collisions du joueur avec les obstacles
     public bool collision;
-    public bool finish;
+    public bool finish = false;
      void OnCollisionStay(Collision other)
     {
         collision = true;

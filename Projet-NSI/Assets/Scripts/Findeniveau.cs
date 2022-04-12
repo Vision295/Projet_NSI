@@ -4,17 +4,26 @@ using UnityEngine.SceneManagement;
 public class Findeniveau : MonoBehaviour
 {
         
-        [SerializeField]
+    [SerializeField]
 
-        public Transform UIPanel;
-    void Start ()
+    public Transform UIPanel;
+    public CollisionJoueur cj;
+    public GameObject cam;
+
+    void Start()
     {
-        UIPanel.gameObject.SetActive(true); 
+        UIPanel.gameObject.SetActive(false);
+    }
+    public void FinNiveau()
+    {
+        UIPanel.gameObject.SetActive(true);
+        Time.timeScale = 0f;
+        cam.transform.Translate(Vector3.forward * 100);
     }
     public void NiveauSuivant()
-
     {
-       if(SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Niveau1"))
+        Time.timeScale = 1f;
+        if(SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Niveau1"))
         {
             SceneManager.LoadScene("Niveau2");
         }
@@ -28,8 +37,8 @@ public class Findeniveau : MonoBehaviour
         }
     }
     public void Rejouer()
-
     {
+        Time.timeScale = 1f;
         if(SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Niveau1"))
         {
             SceneManager.LoadScene("Niveau1");
@@ -46,6 +55,7 @@ public class Findeniveau : MonoBehaviour
 
     public void Menu()
     {
+        Time.timeScale = 1f;
         SceneManager.LoadScene("Transition");
     }        
 }
