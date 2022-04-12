@@ -7,6 +7,7 @@ public class apparitionPortail : MonoBehaviour
 {
     public CalculeScore cs;
     public GameObject portail;
+    public Findeniveau fin;
 
     // Start is called before the first frame update
     void Start()
@@ -27,7 +28,7 @@ public class apparitionPortail : MonoBehaviour
     {
         if (other.tag == "Player" && cs.epreuve == 11)
         {
-            SceneManager.LoadScene("Fin de niveau");
+            fin.FinNiveau();
         }
     }
 }
