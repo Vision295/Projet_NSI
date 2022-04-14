@@ -11,9 +11,10 @@ GameObject:
   - component: {fileID: 3863548888706030318}
   - component: {fileID: 4766418883682306903}
   - component: {fileID: 1865077228904855138}
+  - component: {fileID: 1916955994355542185}
   m_Layer: 0
   m_Name: Torus
-  m_TagString: Untagged
+  m_TagString: Plateforme
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -84,6 +85,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &1916955994355542185
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 517160280886315188}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -8803937527578110353, guid: 7a9cbce7cbdf3d845b0e0f27adee4440, type: 3}
 --- !u!1 &7648626223195730625
 GameObject:
   m_ObjectHideFlags: 0
@@ -191,9 +206,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8806231058319042368}
+  - component: {fileID: 5311128883418021359}
   m_Layer: 0
   m_Name: tramplin
-  m_TagString: Untagged
+  m_TagString: Plateforme
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -215,3 +231,16 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5311128883418021359
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8177926496307789306}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e537e1131e6c1c42abf983077466d1c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifeTime: 10
