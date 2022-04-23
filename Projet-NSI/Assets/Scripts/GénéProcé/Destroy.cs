@@ -9,6 +9,11 @@ public class Destroy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Destroy(gameObject, lifeTime);
+        if(transform.parent == null)
+        {
+            Destroy(gameObject, lifeTime);
+        } else {
+            Destroy(transform.parent.gameObject, lifeTime);
+        }
     }
 }
