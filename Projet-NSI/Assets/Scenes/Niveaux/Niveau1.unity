@@ -2941,8 +2941,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1448676947}
-        m_TargetAssemblyTypeName: Findeniveau, Assembly-CSharp
+      - m_Target: {fileID: 1448676945}
+        m_TargetAssemblyTypeName: Manager, Assembly-CSharp
         m_MethodName: Menu
         m_Mode: 1
         m_Arguments:

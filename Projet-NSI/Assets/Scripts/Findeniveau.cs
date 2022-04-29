@@ -51,11 +51,5 @@ public class Findeniveau : MonoBehaviour
         {
             SceneManager.LoadScene("Niveau3");
         }
-    }
-
-    public void Menu()
-    {
-        Time.timeScale = 1f;
-        SceneManager.LoadScene("Transition");
-    }        
+    }      
 }

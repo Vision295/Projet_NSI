@@ -15,6 +15,7 @@ public class Manager : MonoBehaviour
     public Camera cam;
     private Vector3 posCam;
     private Quaternion rotationCam;
+    public string activeSkin;
     void Start ()
     {
         if(UIPanel.tag == "Menu")
@@ -88,6 +89,8 @@ public class Manager : MonoBehaviour
             objet.transform.localScale = new Vector3(12, 12, 12);
         } else if (objet.tag == "Exit"){
             objet.transform.localScale = new Vector3(60, 100, 32);
+        } else if (objet.tag == "Menu"){
+            objet.transform.localScale = new Vector3(45, 45, 45);
         } else {
             objet.transform.localScale = new Vector3(2, 1.67f, 2);
         }
@@ -104,8 +107,43 @@ public class Manager : MonoBehaviour
             objet.transform.localScale = new Vector3(10, 10, 10);
         } else if (objet.tag == "Exit"){
             objet.transform.localScale = new Vector3(45, 100, 25);
+        } else if (objet.tag == "Menu") {
+            objet.transform.localScale = new Vector3(33, 33, 33);
         } else {
             objet.transform.localScale = new Vector3(1.67f, 1.67f, 1.67f);
+        }
+    }
+
+    public void Menu()
+    {
+        Time.timeScale = 1f;
+        SceneManager.LoadScene("Transition");
+    } 
+
+    public void SetSkin(GameObject objet)
+    {
+        activeSkin = objet.transform.name;
+    }
+
+    public void SetRotationSkin(GameObject objet)
+    {
+        if(objet.transform.name == "robolaby")
+        {
+            objet.transform.rotation = Quaternion.Euler(12, 152, 0);
+            objet.GetComponent<RotationWallis>().enabled = false;
+        } else {
+            objet.transform.rotation = Quaternion.Euler(0, -62, 10);
+            objet.GetComponent<RotationFutuna>().enabled = false;
+        }
+    }
+
+    public void SkinRotate(GameObject objet)
+    {
+        if(objet.transform.name == "robolaby")
+        {
+            objet.GetComponent<RotationWallis>().enabled = true;
+        } else {
+            objet.GetComponent<RotationFutuna>().enabled = true;
         }
     }
 }
