@@ -85,7 +85,9 @@ public class Manager : MonoBehaviour
         } else if(objet.tag == "Restart"){
             objet.transform.localScale = new Vector3(200, 200, 200);
         } else if(objet.tag == "Findeniveau"){
-            objet.transform.localScale = new Vector3(20, 20, 20);
+            objet.transform.localScale = new Vector3(12, 12, 12);
+        } else if (objet.tag == "Exit"){
+            objet.transform.localScale = new Vector3(60, 100, 32);
         } else {
             objet.transform.localScale = new Vector3(2, 1.67f, 2);
         }
@@ -99,7 +101,9 @@ public class Manager : MonoBehaviour
         } else if (objet.tag == "Restart") {
             objet.transform.localScale = new Vector3(150, 150, 150);
         } else if(objet.tag == "Findeniveau"){
-            objet.transform.localScale = new Vector3(16, 16, 16);
+            objet.transform.localScale = new Vector3(10, 10, 10);
+        } else if (objet.tag == "Exit"){
+            objet.transform.localScale = new Vector3(45, 100, 25);
         } else {
             objet.transform.localScale = new Vector3(1.67f, 1.67f, 1.67f);
         }

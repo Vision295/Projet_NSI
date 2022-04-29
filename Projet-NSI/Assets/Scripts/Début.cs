@@ -12,6 +12,5 @@ public class Début : MonoBehaviour
     public void Restart()
     {  
         SceneManager.LoadScene("Niveau1");
-        Debug.Log("a");
     }
 }   
