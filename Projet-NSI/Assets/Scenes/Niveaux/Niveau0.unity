@@ -746,7 +746,7 @@ Light:
   m_Type: 0
   m_Shape: 0
   m_Color: {r: 0, g: 0.31543207, b: 1, a: 1}
-  m_Intensity: 50
+  m_Intensity: 0
   m_Range: 2.3779817
   m_SpotAngle: 20.74044
   m_InnerSpotAngle: 20.74044
@@ -883,6 +883,51 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 0f0e2888a322fd94ab23a65e27721013, type: 3}
   m_PrefabInstance: {fileID: 786708894}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &997307367
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 997307369}
+  - component: {fileID: 997307368}
+  m_Layer: 0
+  m_Name: mainManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &997307368
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 997307367}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 306650e3de607bf49b116e6d9a0521ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activeSkin: 
+--- !u!4 &997307369
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 997307367}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 94.739456, y: 61.670803, z: 6.4475727}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1080553314
 GameObject:
   m_ObjectHideFlags: 0
@@ -932,7 +977,7 @@ Light:
   m_Type: 0
   m_Shape: 0
   m_Color: {r: 0, g: 0.31543207, b: 1, a: 1}
-  m_Intensity: 100
+  m_Intensity: 0
   m_Range: 2.3779817
   m_SpotAngle: 20.74044
   m_InnerSpotAngle: 20.74044
@@ -1897,8 +1942,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2133313095}
-        m_TargetAssemblyTypeName: Manager, Assembly-CSharp
+      - m_Target: {fileID: 997307368}
+        m_TargetAssemblyTypeName: MainManager, Assembly-CSharp
         m_MethodName: SetSkin
         m_Mode: 2
         m_Arguments:
@@ -2100,8 +2145,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2133313095}
-        m_TargetAssemblyTypeName: Manager, Assembly-CSharp
+      - m_Target: {fileID: 997307368}
+        m_TargetAssemblyTypeName: MainManager, Assembly-CSharp
         m_MethodName: SetSkin
         m_Mode: 2
         m_Arguments:
@@ -2392,7 +2437,6 @@ MonoBehaviour:
   pause: {fileID: 0}
   isPaused: 0
   cam: {fileID: 348205116}
-  activeSkin: 
 --- !u!4 &2133313096
 Transform:
   m_ObjectHideFlags: 0

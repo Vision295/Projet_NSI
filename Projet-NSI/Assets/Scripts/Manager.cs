@@ -15,7 +15,6 @@ public class Manager : MonoBehaviour
     public Camera cam;
     private Vector3 posCam;
     private Quaternion rotationCam;
-    public string activeSkin;
     void Start ()
     {
         if(UIPanel.tag == "Menu")
@@ -118,11 +117,6 @@ public class Manager : MonoBehaviour
     {
         Time.timeScale = 1f;
         SceneManager.LoadScene("Transition");
-    } 
-
-    public void SetSkin(GameObject objet)
-    {
-        activeSkin = objet.transform.name;
     }
 
     public void SetRotationSkin(GameObject objet)
