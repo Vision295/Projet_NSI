@@ -127,23 +127,19 @@ public class Manager : MonoBehaviour
 
     public void SetRotationSkin(GameObject objet)
     {
+        objet.transform.Find("Spot Light").GetComponent<Light>().intensity = 0;
         if(objet.transform.name == "robolaby")
         {
             objet.transform.rotation = Quaternion.Euler(12, 152, 0);
-            objet.GetComponent<RotationWallis>().enabled = false;
         } else {
             objet.transform.rotation = Quaternion.Euler(0, -62, 10);
-            objet.GetComponent<RotationFutuna>().enabled = false;
         }
+        objet.GetComponent<RotationWallisEtFunua>().enabled = false;
     }
 
     public void SkinRotate(GameObject objet)
     {
-        if(objet.transform.name == "robolaby")
-        {
-            objet.GetComponent<RotationWallis>().enabled = true;
-        } else {
-            objet.GetComponent<RotationFutuna>().enabled = true;
-        }
+        objet.transform.Find("Spot Light").GetComponent<Light>().intensity = 100;
+        objet.GetComponent<RotationWallisEtFunua>().enabled = true;
     }
 }

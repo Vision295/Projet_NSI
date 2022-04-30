@@ -721,17 +721,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 544430326}
-  m_LocalRotation: {x: 0.5663673, y: -0, z: -0, w: 0.82415295}
-  m_LocalPosition: {x: 0, y: 0, z: -526}
-  m_LocalScale: {x: 0.997819, y: 0.99781907, z: 0.99781907}
+  m_LocalRotation: {x: 0.11381117, y: -0.73848677, z: 0.6306639, w: 0.2096365}
+  m_LocalPosition: {x: 0, y: 0, z: 1.3072925}
+  m_LocalScale: {x: 0.008974805, y: 0.008974806, z: 0.008974807}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1945610041}
-  m_RootOrder: 1
+  m_Father: {fileID: 1713798409}
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 68.995, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 98, y: 1393}
+  m_AnchoredPosition: {x: 1.4721527, y: 14.116943}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!108 &544430328
@@ -907,17 +907,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1080553314}
-  m_LocalRotation: {x: 0.5663673, y: -0, z: -0, w: 0.82415295}
-  m_LocalPosition: {x: 0, y: 0, z: -610}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: 0.52012295, y: 0.38203466, z: -0.352953, w: 0.6774554}
+  m_LocalPosition: {x: 0, y: 0, z: -1.0825056}
+  m_LocalScale: {x: 0.0049999994, y: 0.0050000013, z: 0.005}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1831928308}
-  m_RootOrder: 1
+  m_Father: {fileID: 1935567552}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 68.995, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -108, y: 1361}
+  m_AnchoredPosition: {x: -1.5261536, y: 8.02124}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!108 &1080553316
@@ -1108,7 +1108,7 @@ RectTransform:
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1945610041}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: -3.469, y: 0.322, z: -9.423}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1705,7 +1705,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1713798408}
   m_Enabled: 0
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fdbf7c509908e4d4b931aed97fe7ffe3, type: 3}
+  m_Script: {fileID: 11500000, guid: ad8dbdec34654514890511f5656fad72, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1722074853
@@ -1734,17 +1734,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1722074853}
-  m_LocalRotation: {x: -0.018557936, y: 0.0014506781, z: 0.07791899, w: 0.99678594}
-  m_LocalPosition: {x: 0, y: 0, z: 129}
-  m_LocalScale: {x: 541.6, y: 20.91609, z: 541.6}
+  m_LocalRotation: {x: -0.018557938, y: 0.0014506577, z: 0.07791899, w: 0.9967859}
+  m_LocalPosition: {x: 0, y: 0, z: 128.99944}
+  m_LocalScale: {x: 541.59985, y: 20.916086, z: 541.59985}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1831928308}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: -2.133, y: 0, z: 8.939}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 40, y: -205}
+  m_AnchoredPosition: {x: 39.999485, y: -205.00394}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!136 &1722074855
@@ -1844,7 +1844,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1935567552}
-  - {fileID: 1080553315}
   - {fileID: 1722074854}
   m_Father: {fileID: 1328955179}
   m_RootOrder: 4
@@ -2012,7 +2011,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1935567551}
   m_Enabled: 0
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d6b75b87473a0d42807c20d24e7c8a9, type: 3}
+  m_Script: {fileID: 11500000, guid: ad8dbdec34654514890511f5656fad72, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1945610040
@@ -2048,7 +2047,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1713798409}
-  - {fileID: 544430327}
   - {fileID: 1143789779}
   m_Father: {fileID: 1328955179}
   m_RootOrder: 3
