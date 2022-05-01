@@ -3,8 +3,8 @@ using UnityEngine.SceneManagement;
 
 public class findeniveaujoueur : MonoBehaviour
 {
-        [SerializeField]
-
+    // script pour afficher l'écran de fin de niveau
+    [SerializeField]
     public Transform Pause;
 
     public bool isPaused;

@@ -24,6 +24,7 @@ public class CalculeScore : MonoBehaviour
         if (other.tag == "BonusVitesse")
         {
             DJ.speed[0] *= 2;
+            // met fin au bonus au bon d'un certain temps
             Invoke("SpeedBonusEnd", endDelay);
         }
     }

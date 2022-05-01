@@ -273,7 +273,7 @@ Transform:
   m_Children:
   - {fileID: 1114093103}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
 --- !u!4 &410305915 stripped
 Transform:
@@ -397,7 +397,7 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 2133313095}
           m_TargetAssemblyTypeName: Manager, Assembly-CSharp
-          m_MethodName: hover
+          m_MethodName: Hover
           m_Mode: 2
           m_Arguments:
             m_ObjectArgument: {fileID: 715591666}
@@ -577,7 +577,7 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 2133313095}
           m_TargetAssemblyTypeName: Manager, Assembly-CSharp
-          m_MethodName: hover
+          m_MethodName: Hover
           m_Mode: 2
           m_Arguments:
             m_ObjectArgument: {fileID: 1701447539}
@@ -926,7 +926,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1080553314
 GameObject:
@@ -1284,7 +1284,7 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 2133313095}
           m_TargetAssemblyTypeName: Manager, Assembly-CSharp
-          m_MethodName: hover
+          m_MethodName: Hover
           m_Mode: 2
           m_Arguments:
             m_ObjectArgument: {fileID: 1193248544}
@@ -1572,7 +1572,7 @@ GameObject:
   - component: {fileID: 1328955181}
   - component: {fileID: 1328955180}
   m_Layer: 0
-  m_Name: Debut - panel
+  m_Name: Debut - canva
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1664,63 +1664,6 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
---- !u!1001 &1694300136
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: -8679921383154817045, guid: fb6736a32119dba41b678366ea4f377f, type: 3}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: fb6736a32119dba41b678366ea4f377f, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 729
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: fb6736a32119dba41b678366ea4f377f, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -1.4617145
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: fb6736a32119dba41b678366ea4f377f, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 5.47
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: fb6736a32119dba41b678366ea4f377f, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.23818126
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: fb6736a32119dba41b678366ea4f377f, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: fb6736a32119dba41b678366ea4f377f, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.9712207
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: fb6736a32119dba41b678366ea4f377f, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: fb6736a32119dba41b678366ea4f377f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: fb6736a32119dba41b678366ea4f377f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 152.442
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: fb6736a32119dba41b678366ea4f377f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: fb6736a32119dba41b678366ea4f377f, type: 3}
-      propertyPath: m_Name
-      value: robolaby
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: fb6736a32119dba41b678366ea4f377f, type: 3}
 --- !u!1 &1701447539 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 32b5642cdf83c474bbfcc59672cac8b4, type: 3}
@@ -2027,7 +1970,7 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 2133313095}
           m_TargetAssemblyTypeName: Manager, Assembly-CSharp
-          m_MethodName: SetRotationSkin
+          m_MethodName: SkinNotRotate
           m_Mode: 2
           m_Arguments:
             m_ObjectArgument: {fileID: 1935567551}
@@ -2230,7 +2173,7 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 2133313095}
           m_TargetAssemblyTypeName: Manager, Assembly-CSharp
-          m_MethodName: SetRotationSkin
+          m_MethodName: SkinNotRotate
           m_Mode: 2
           m_Arguments:
             m_ObjectArgument: {fileID: 1713798408}
@@ -2452,5 +2395,5 @@ Transform:
   - {fileID: 1328955179}
   - {fileID: 21586593}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

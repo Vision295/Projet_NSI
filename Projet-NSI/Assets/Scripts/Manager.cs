@@ -6,31 +6,38 @@ using UnityEngine.SceneManagement;
 
 public class Manager : MonoBehaviour 
 {
+    /*
+    script contenu dans toutes les scènes
+    script dans l'objet gui - manager
+    permet de gérer l'interface utilisateur (GUI)
+    */
 
     [SerializeField]
-    Transform UIPanel; //Will assign our panel to this variable so we can enable/disable it
+    Transform UIPanel;
+    // variable pour le bouton pause et l'écran de pause
     public Transform pause;
-
-    public bool isPaused; //Used to determine paused state
+    public bool isPaused;
     public Camera cam;
     private Vector3 posCam;
     private Quaternion rotationCam;
     void Start ()
     {
+        // Le menu de pause ne doit pas être affiché lors du lancement de la scène
         if(UIPanel.tag == "Menu")
         {
-            UIPanel.gameObject.SetActive(false); //fait en sorte que le menu ne se voit pas lors du lancement de la scène
+            UIPanel.gameObject.SetActive(false);
         }
-        isPaused = false; //make sure isPaused is always false when our scene opens
+        isPaused = false;
     }
  
     void Update ()
     {
-        //If player presses escape and game is not paused. Pause game. If game is paused and player presses escape, unpause.
+        // si le jeu n'est pas en pause et que le joueur souhaite mettre le jeu en pause alors
         if(Input.GetKeyDown(KeyCode.Escape) && !isPaused)
         {
             Pause();
         }
+        // sinon si le joueur appuie sur le touche échappe sort de l'écran de pause
         else if(Input.GetKeyDown(KeyCode.Escape) && isPaused)
         {
             UnPause();
@@ -77,39 +84,41 @@ public class Manager : MonoBehaviour
         Time.timeScale = 1f;
     }
 
-    public static void hover(GameObject objet)
+    public static void Hover(GameObject objet)
     {
+        // méthode qui permet de modifier (de manière proportionnelle) la taille du bouton lorsque l'utilisateur le survole
         if(objet.tag == "Pause")
         {
             objet.transform.localScale = new Vector3(13, 10, 13);
         } else if(objet.tag == "Restart"){
             objet.transform.localScale = new Vector3(200, 200, 200);
         } else if(objet.tag == "Findeniveau"){
-            objet.transform.localScale = new Vector3(12, 12, 12);
+            objet.transform.localScale = new Vector3(20, 20, 20);
         } else if (objet.tag == "Exit"){
             objet.transform.localScale = new Vector3(60, 100, 32);
         } else if (objet.tag == "Menu"){
             objet.transform.localScale = new Vector3(45, 45, 45);
-        } else {
-            objet.transform.localScale = new Vector3(2, 1.67f, 2);
+        } else if (objet.tag == "MenuBoutton") {
+            objet.transform.localScale = new Vector3(80, 80, 80);
         }
     }
 
     public static void Unhover(GameObject objet)
     {
+        // méthode qui permet à l'objet de récupérer sa taille originale une fois que la souris l'a survolé 
         if(objet.tag == "Pause")
         {
             objet.transform.localScale = new Vector3(10, 10, 10);
         } else if (objet.tag == "Restart") {
             objet.transform.localScale = new Vector3(150, 150, 150);
         } else if(objet.tag == "Findeniveau"){
-            objet.transform.localScale = new Vector3(10, 10, 10);
+            objet.transform.localScale = new Vector3(16, 16, 16);
         } else if (objet.tag == "Exit"){
             objet.transform.localScale = new Vector3(45, 100, 25);
         } else if (objet.tag == "Menu") {
             objet.transform.localScale = new Vector3(33, 33, 33);
-        } else {
-            objet.transform.localScale = new Vector3(1.67f, 1.67f, 1.67f);
+        } else if (objet.tag == "MenuBoutton") {
+            objet.transform.localScale = new Vector3(67, 67, 67);
         }
     }
 
@@ -119,20 +128,28 @@ public class Manager : MonoBehaviour
         SceneManager.LoadScene("Transition");
     }
 
-    public void SetRotationSkin(GameObject objet)
+    public void SkinNotRotate(GameObject objet)
     {
+        // méthode lorsque la souris ne survole plus le personnage
+        // méthode qui permet de stoper la rotation et l'éclairage du personnage lorsque ce dernier n'est pas survolé par la souris
         objet.transform.Find("Spot Light").GetComponent<Light>().intensity = 0;
+        // si l'objet est wall-e
         if(objet.transform.name == "robolaby")
         {
             objet.transform.rotation = Quaternion.Euler(12, 152, 0);
-        } else {
+        } 
+        // sinon l'objet désélectionné est eve 
+        else {
             objet.transform.rotation = Quaternion.Euler(0, -62, 10);
         }
+        // stope la rotation
         objet.GetComponent<RotationWallisEtFunua>().enabled = false;
     }
 
     public void SkinRotate(GameObject objet)
     {
+        // méthode lorsque la souris survole le personnage
+        // méthode qui permet de faire tourner le personnage sélectionné et de 
         objet.transform.Find("Spot Light").GetComponent<Light>().intensity = 100;
         objet.GetComponent<RotationWallisEtFunua>().enabled = true;
     }

@@ -23,6 +23,7 @@ public class CollisionJoueur : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
+        // si le joueur entre en collision avec l'objet de fin de niveau
         if (other.tag == "Finish")
         {
             finish = true;

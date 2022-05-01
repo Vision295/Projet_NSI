@@ -9,6 +9,7 @@ public class Findeniveau : MonoBehaviour
     public Transform UIPanel;
     public CollisionJoueur cj;
     public GameObject cam;
+    public bool fin;
 
     void Start()
     {
@@ -17,8 +18,8 @@ public class Findeniveau : MonoBehaviour
     public void FinNiveau()
     {
         UIPanel.gameObject.SetActive(true);
+        fin = true;
         Time.timeScale = 0f;
-        cam.transform.Translate(Vector3.forward * 100);
     }
     public void NiveauSuivant()
     {
