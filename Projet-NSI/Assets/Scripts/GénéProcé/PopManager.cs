@@ -20,7 +20,7 @@ public class PopManager : MonoBehaviour
     private float exp;
 
     void Start()
-    { 
+    {
         DJ = GetComponent<DeplacementJoueur>();
     }
 

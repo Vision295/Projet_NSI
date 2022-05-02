@@ -37,6 +37,7 @@ public class ChuteJoueur : MonoBehaviour
         if (other.tag == "Respawn")
         {
             respawn = other.transform.position + new Vector3(0, 3, 0);
+            other.transform.Find("Point Light").GetComponent<Light>().intensity = 10;
         }
     }
 }
