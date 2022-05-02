@@ -7,7 +7,16 @@ public class CollisionJoueur : MonoBehaviour
     // stocke les collisions du joueur avec les obstacles
     public bool collision;
     public bool finish = false;
-     void OnCollisionStay(Collision other)
+
+    // contrôle le joueur
+    public CharacterController cc;
+
+    void Start()
+    {
+        cc = GetComponent<CharacterController>();
+    }
+
+    void OnCollisionStay(Collision other)
     {
         collision = true;
     }
@@ -29,4 +38,13 @@ public class CollisionJoueur : MonoBehaviour
             finish = true;
         }
     }
+
+    void OnControllerColliderHit(ControllerColliderHit hit)
+    {
+        if (hit.gameObject.tag == "Obstacle")
+        {
+            hit.gameObject.GetComponent<Rigidbody>().AddForce(cc.velocity * 50);
+        }
+    }
+
 }
