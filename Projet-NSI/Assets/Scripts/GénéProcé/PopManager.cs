@@ -30,9 +30,9 @@ public class PopManager : MonoBehaviour
         DJ.speed[0] += 0.25f;
         DJ.speed[2] += 0.25f;
 
-        positionX -= 7 * 2 * Mathf.Log(DJ.speed[0], 2);
-        positionY += + 4 * Random.Range(-1, 2);
-        positionZ += + Random.Range(-2, 3) * 7;
+        positionX -= 14 * Mathf.Log(DJ.speed[0], 2);
+        positionY += 4 * Random.Range(-1, 2);
+        positionZ += Random.Range(-3, 3) * 5;
         Vector3 spawnPosition = new Vector3(positionX, positionY, positionZ);
 
         PFIndex = Random.Range(0, listePF.Length);
