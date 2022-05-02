@@ -19,13 +19,9 @@ public class PopManager : MonoBehaviour
     public DeplacementJoueur DJ;
     private float exp;
 
-    // contrôle le joueur
-    public CharacterController cc;
-
     void Start()
     {
         DJ = GetComponent<DeplacementJoueur>();
-        cc = GetComponent<CharacterController>();
     }
 
     // Update is called once per frame
@@ -45,11 +41,6 @@ public class PopManager : MonoBehaviour
     
     void OnControllerColliderHit(ControllerColliderHit hit) 
     {
-        if(hit.gameObject.tag == "Obstacle")
-        {
-            hit.gameObject.GetComponent<Rigidbody>().AddForce(cc.velocity * 50);
-        }
-
         if(hit.gameObject.tag == "Plateforme")
         {
             PopRandomPF();
