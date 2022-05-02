@@ -9,6 +9,11 @@ public class MainManager : MonoBehaviour
 
     // skin séléctionné
     public string activeSkin;
+
+    void Start()
+    {
+        Application.targetFrameRate = 60;
+    }
     private void Awake()
     {
         // méthode pour que l'objet MainManager ne soit pas détruit lors du changement de scène
