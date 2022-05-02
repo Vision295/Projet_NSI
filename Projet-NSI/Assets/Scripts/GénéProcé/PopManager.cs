@@ -42,7 +42,15 @@ public class PopManager : MonoBehaviour
     
     void OnControllerColliderHit(ControllerColliderHit hit) 
     {
-        
+        if(hit.gameObject.tag == "Plateforme")
+        {
+            PopRandomPF();
+            hit.gameObject.tag = "Done";
+        }
+    }
+
+    void OnTriggerEnter(Collider hit)
+    {
         if(hit.gameObject.tag == "Plateforme")
         {
             PopRandomPF();
