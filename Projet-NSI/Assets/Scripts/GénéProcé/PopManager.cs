@@ -20,7 +20,7 @@ public class PopManager : MonoBehaviour
     private float exp;
 
     void Start()
-    { 
+    {
         DJ = GetComponent<DeplacementJoueur>();
     }
 
@@ -28,7 +28,6 @@ public class PopManager : MonoBehaviour
     void PopRandomPF()
     {
         DJ.speed[0] += 0.25f;
-        DJ.speed[2] += 0.25f;
 
         positionX -= 14 * Mathf.Log(DJ.speed[0], 2);
         positionY += 4 * Random.Range(-1, 2);
@@ -42,7 +41,15 @@ public class PopManager : MonoBehaviour
     
     void OnControllerColliderHit(ControllerColliderHit hit) 
     {
-        
+        if(hit.gameObject.tag == "Plateforme")
+        {
+            PopRandomPF();
+            hit.gameObject.tag = "Done";
+        }
+    }
+
+    void OnTriggerEnter(Collider hit)
+    {
         if(hit.gameObject.tag == "Plateforme")
         {
             PopRandomPF();
