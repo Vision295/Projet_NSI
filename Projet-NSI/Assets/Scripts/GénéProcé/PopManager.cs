@@ -23,7 +23,7 @@ public class PopManager : MonoBehaviour
     public CharacterController cc;
 
     void Start()
-    { 
+    {
         DJ = GetComponent<DeplacementJoueur>();
         cc = GetComponent<CharacterController>();
     }
