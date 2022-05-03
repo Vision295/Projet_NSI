@@ -110,5 +110,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e537e1131e6c1c42abf983077466d1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  popmanag: {fileID: 6721285643565485951, guid: 232b21e0e1204c24fb21c42b92662741, type: 3}
-  plateforme: {fileID: 2133811976950915057}
+  lifeTime: 10
