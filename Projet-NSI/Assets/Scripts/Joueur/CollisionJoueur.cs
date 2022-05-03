@@ -8,7 +8,7 @@ public class CollisionJoueur : MonoBehaviour
     public bool collision;
     public bool finish = false;
 
-    // contrôle le joueur
+    // contrï¿½le le joueur
     public CharacterController cc;
 
     void Start()
@@ -46,5 +46,4 @@ public class CollisionJoueur : MonoBehaviour
             hit.gameObject.GetComponent<Rigidbody>().AddForce(cc.velocity * 50);
         }
     }
-
 }
