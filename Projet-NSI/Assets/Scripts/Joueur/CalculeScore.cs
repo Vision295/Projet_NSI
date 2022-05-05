@@ -10,6 +10,13 @@ public class CalculeScore : MonoBehaviour
 
     // variable contenant le script de déplacement du joueur
     public DeplacementJoueur DJ;
+    public GameObject text;
+    public TextMesh tm;
+
+    void Start()
+    {
+        tm = text.GetComponent<TextMesh>();
+    }
 
     // Lorsque le joueur entre en collision avec un objet collectable
     void OnTriggerEnter(Collider other)
@@ -32,5 +39,11 @@ public class CalculeScore : MonoBehaviour
     void SpeedBonusEnd()
     {
         DJ.speed[0] /= 2;
+    }
+
+    void Update()
+    {
+        tm.text = "score " + score.ToString();
+        Debug.Log(tm.text);
     }
 }
