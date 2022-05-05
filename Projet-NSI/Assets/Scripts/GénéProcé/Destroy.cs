@@ -13,11 +13,11 @@ public class Destroy : MonoBehaviour
         {
             Destroy(gameObject, lifeTime);
             // ce code ne fonctionne pas 
-            for (float i = 8; i < 10; i+=1/10)
+            /*for (float i = 8; i < 10; i+=1/10)
             {
                 Invoke("Hide", i);
                 Invoke("Display", i + 1/10);
-            }
+            }*/
         } else {
             Destroy(transform.parent.gameObject, lifeTime);
         }
