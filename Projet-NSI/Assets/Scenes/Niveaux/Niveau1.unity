@@ -361,7 +361,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2420132986767392879, guid: 96b09bfd04120294d919893d227e8141, type: 3}
       propertyPath: m_Name
-      value: etoile1 (3)
+      value: etoile4
       objectReference: {fileID: 0}
     - target: {fileID: 3088865221050735317, guid: 96b09bfd04120294d919893d227e8141, type: 3}
       propertyPath: m_RootOrder
@@ -869,7 +869,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2420132986767392879, guid: 96b09bfd04120294d919893d227e8141, type: 3}
       propertyPath: m_Name
-      value: etoile1 (2)
+      value: etoile3
       objectReference: {fileID: 0}
     - target: {fileID: 3088865221050735317, guid: 96b09bfd04120294d919893d227e8141, type: 3}
       propertyPath: m_RootOrder
@@ -1545,7 +1545,7 @@ GameObject:
   m_Component:
   - component: {fileID: 386401958}
   m_Layer: 0
-  m_Name: "argent - pi\xE8ces"
+  m_Name: argent
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2031,7 +2031,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2420132986767392879, guid: 96b09bfd04120294d919893d227e8141, type: 3}
       propertyPath: m_Name
-      value: etoile1 (1)
+      value: etoile2
       objectReference: {fileID: 0}
     - target: {fileID: 3088865221050735317, guid: 96b09bfd04120294d919893d227e8141, type: 3}
       propertyPath: m_RootOrder
@@ -2333,7 +2333,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 3cdfe6697171b7b4ebec892581b5113b, type: 2}
     - target: {fileID: 919132149155446097, guid: 9647e064f674f6e41a1da7a9a1773b4f, type: 3}
       propertyPath: m_Name
-      value: arche  - depart
+      value: "arche_d\xE9part"
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9647e064f674f6e41a1da7a9a1773b4f, type: 3}
@@ -2809,7 +2809,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: b6ac77670f360464abf96d0522afce5f, type: 2}
     - target: {fileID: 919132149155446097, guid: 9647e064f674f6e41a1da7a9a1773b4f, type: 3}
       propertyPath: m_Name
-      value: arche - arrive
+      value: "arche_arriv\xE9e"
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9647e064f674f6e41a1da7a9a1773b4f, type: 3}
@@ -3801,7 +3801,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2420132986767392879, guid: 96b09bfd04120294d919893d227e8141, type: 3}
       propertyPath: m_Name
-      value: etoile1 (4)
+      value: etoile5
       objectReference: {fileID: 0}
     - target: {fileID: 3088865221050735317, guid: 96b09bfd04120294d919893d227e8141, type: 3}
       propertyPath: m_RootOrder
@@ -4505,7 +4505,7 @@ GameObject:
   - component: {fileID: 1574852354}
   - component: {fileID: 1574852357}
   m_Layer: 0
-  m_Name: arrive - collision
+  m_Name: "collision_arriv\xE9e"
   m_TagString: Finish
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5714,7 +5714,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 461389785721177335, guid: 0730f8b65cab9cf4c94f6ab03ff1038e, type: 3}
       propertyPath: m_Name
-      value: foudre - bonusVitesse
+      value: bonusVitesse
       objectReference: {fileID: 0}
     - target: {fileID: 949414256012942925, guid: 0730f8b65cab9cf4c94f6ab03ff1038e, type: 3}
       propertyPath: m_RootOrder
