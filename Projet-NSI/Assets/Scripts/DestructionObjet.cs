@@ -7,7 +7,10 @@ public class DestructionObjet : MonoBehaviour
     // script pour tous les objets récupérables
     void OnTriggerEnter(Collider other)
     {
-        Destroy(gameObject);
+        if (other.gameObject.tag == "Player")
+        {
+            Destroy(gameObject);
+        }
     }
 
 }
