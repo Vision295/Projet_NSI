@@ -44,6 +44,5 @@ public class CalculeScore : MonoBehaviour
     void Update()
     {
         tm.text = "score " + score.ToString();
-        Debug.Log(tm.text);
     }
 }
