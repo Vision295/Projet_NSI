@@ -6,30 +6,40 @@ public class Destroy : MonoBehaviour
 {
     public int lifeTime = 10;
 
-    // Update is called once per frame
+   void Start()
+   {
+        for (int i = 40; i < 50; i+=1)
+        {
+            Invoke("Hide", i/5f);
+            Invoke("Display", i/5f + 0.1f);
+        }
+   }
     void Update()
     {
         if(transform.parent == null)
         {
-            Destroy(gameObject, lifeTime);
-            // ce code ne fonctionne pas 
-            /*for (float i = 8; i < 10; i+=1/10)
-            {
-                Invoke("Hide", i);
-                Invoke("Display", i + 1/10);
-            }*/
+            Destroy(gameObject, lifeTime);            
         } else {
             Destroy(transform.parent.gameObject, lifeTime);
         }
     }
 
     public void Display()
-    {
-        gameObject.GetComponent<Renderer>().enabled = false;
+    { 
+        foreach (Transform child in transform)
+        {
+            if(child.name != "Cube")
+            {
+                child.GetComponent<Renderer>().enabled = true;
+            }
+        }
     }
 
     public void Hide()
     {
-        gameObject.GetComponent<Renderer>().enabled = true;
+        foreach (Transform child in transform)
+        {
+            child.GetComponent<Renderer>().enabled = false;
+        }
     }
 }
