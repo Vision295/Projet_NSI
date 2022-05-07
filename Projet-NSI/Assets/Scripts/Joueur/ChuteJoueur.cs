@@ -39,5 +39,13 @@ public class ChuteJoueur : MonoBehaviour
             respawn = other.transform.position + new Vector3(0, 3, 0);
             other.transform.Find("Point Light").GetComponent<Light>().intensity = 10;
         }
+
+        if (other.tag == "Marteau")
+        {
+            cc.enabled = false;
+            cc.transform.position = respawn;
+            cc.transform.rotation = Quaternion.Euler(0, -90, 0);
+            cc.enabled = true;
+        }
     }
 }

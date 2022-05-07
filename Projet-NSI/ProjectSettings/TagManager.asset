@@ -18,6 +18,7 @@ TagManager:
   - Exit
   - MenuBoutton
   - Obstacle
+  - Marteau
   layers:
   - Default
   - TransparentFX
