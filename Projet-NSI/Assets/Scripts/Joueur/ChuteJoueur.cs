@@ -23,11 +23,7 @@ public class ChuteJoueur : MonoBehaviour
         // si le joueur chute
         if(transform.position.y < offsetY)
         {
-            // on désactive la restriction du composant et on reset la position du joueur
-            cc.enabled = false;
-            cc.transform.position = respawn;
-            cc.transform.rotation = Quaternion.Euler(0, -90, 0);
-            cc.enabled = true;
+            Respawning();
         }
     }
 
@@ -42,10 +38,16 @@ public class ChuteJoueur : MonoBehaviour
 
         if (other.tag == "Marteau")
         {
-            cc.enabled = false;
-            cc.transform.position = respawn;
-            cc.transform.rotation = Quaternion.Euler(0, -90, 0);
-            cc.enabled = true;
+            Respawning();
         }
+    }
+
+    void Respawning()
+    {
+        // on désactive la restriction du composant et on reset la position du joueur
+        cc.enabled = false;
+        cc.transform.position = respawn;
+        cc.transform.rotation = Quaternion.Euler(0, -90, 0);
+        cc.enabled = true;
     }
 }
