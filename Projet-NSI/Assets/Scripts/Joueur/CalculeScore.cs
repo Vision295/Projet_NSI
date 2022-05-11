@@ -12,6 +12,7 @@ public class CalculeScore : MonoBehaviour
     public DeplacementJoueur DJ;
     public GameObject text;
     public TextMesh tm;
+    public TextMesh ttm;
 
     void Start()
     {
@@ -43,6 +44,7 @@ public class CalculeScore : MonoBehaviour
 
     void Update()
     {
+        ttm.text = tm.text;
         tm.text = "score " + score.ToString();
     }
 }

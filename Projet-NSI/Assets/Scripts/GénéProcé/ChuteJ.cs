@@ -6,16 +6,22 @@ using UnityEngine.SceneManagement;
 public class ChuteJ : MonoBehaviour
 {
     public PopManager pop;
+    public Transform fin;
+    public Findeniveau fn;
 
     void Start()
     {
         pop = GetComponent<PopManager>();
+        fin.gameObject.SetActive(false);
+        Time.timeScale = 1f;
     }
     void Update()
     {
         if(transform.position.y < pop.positionY - 10)
-        {
-            SceneManager.LoadScene("NiveauInfini");
+        {            
+            fin.gameObject.SetActive(true);
+            Time.timeScale = 0f;
+            fn.fin = true;
         }
     }
 }
