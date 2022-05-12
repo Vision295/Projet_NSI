@@ -2372,9 +2372,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 122bd854609c92f43bb374d423172f50, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cs: {fileID: 0}
+  cs: {fileID: 1534274769}
   portail: {fileID: 861894469}
-  fin: {fileID: 0}
+  fin: {fileID: 816418093}
 --- !u!65 &322103633
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6413,7 +6413,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   survole: {fileID: 2100000, guid: 3cdfe6697171b7b4ebec892581b5113b, type: 2}
-  cs: {fileID: 0}
+  cs: {fileID: 1534274769}
 --- !u!1001 &1321342759
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6873,7 +6873,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2ef3a42666cd1f04e85c9618f805bf2d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 63
+      value: 62
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2ef3a42666cd1f04e85c9618f805bf2d, type: 3}
       propertyPath: m_LocalPosition.z
@@ -7283,6 +7283,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   joueur: {fileID: 1534274762}
   test: 0
+--- !u!114 &1534274769 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1769898012587605980, guid: dfd736d60679e4143a52cd751368cb67, type: 3}
+  m_PrefabInstance: {fileID: 41560687}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1534274759}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c54c5a702db8e846abc21cedbcce5da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1539568196
 PrefabInstance:
   m_ObjectHideFlags: 0
