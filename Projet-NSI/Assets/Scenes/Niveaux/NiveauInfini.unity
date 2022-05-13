@@ -514,9 +514,17 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1769898012587605980, guid: dfd736d60679e4143a52cd751368cb67, type: 3}
+      propertyPath: Tm
+      value: 
+      objectReference: {fileID: 553730116}
+    - target: {fileID: 1769898012587605980, guid: dfd736d60679e4143a52cd751368cb67, type: 3}
       propertyPath: tm
       value: 
       objectReference: {fileID: 553730117}
+    - target: {fileID: 1769898012587605980, guid: dfd736d60679e4143a52cd751368cb67, type: 3}
+      propertyPath: Ttm
+      value: 
+      objectReference: {fileID: 631904175}
     - target: {fileID: 1769898012587605980, guid: dfd736d60679e4143a52cd751368cb67, type: 3}
       propertyPath: ttm
       value: 
@@ -644,7 +652,7 @@ GameObject:
   - component: {fileID: 553730118}
   - component: {fileID: 553730117}
   m_Layer: 5
-  m_Name: score
+  m_Name: score (partie)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
