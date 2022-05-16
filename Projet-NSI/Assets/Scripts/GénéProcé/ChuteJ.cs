@@ -18,10 +18,21 @@ public class ChuteJ : MonoBehaviour
     void Update()
     {
         if(transform.position.y < pop.positionY - 10)
-        {            
-            fin.gameObject.SetActive(true);
-            Time.timeScale = 0f;
-            fn.fin = true;
+        {
+            GameOver();
         }
+    }
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "Marteau")
+        {
+            GameOver();
+        }
+    }
+    void GameOver()
+    {
+        fin.gameObject.SetActive(true);
+        Time.timeScale = 0f;
+        fn.fin = true;
     }
 }
