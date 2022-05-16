@@ -10,7 +10,7 @@ public class Interupteur : MonoBehaviour
     {
         if(other.tag == "Player") // le tag doit être Player
         {
-            pf.GetComponent<MontePF>().enabled = isActive;  
+            pf.GetComponent<MontePF>().enabled = isActive;   
         }
     }
     void OnTriggerExit(Collider other) // fin de la collision avec l'objet 
