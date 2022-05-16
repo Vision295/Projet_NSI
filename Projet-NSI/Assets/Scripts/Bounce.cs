@@ -11,7 +11,7 @@ public class Bounce : MonoBehaviour
         if(hit.gameObject.tag == "Bounce") // le tag de l'objet doit être Bounce 
         {
             joueur.trampo = true; 
-            Invoke("Trampo", 0.3f); // 
+            Invoke("Trampo", 0.3f); 
         }
     }
 
