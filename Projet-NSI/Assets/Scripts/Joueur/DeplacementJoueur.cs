@@ -12,14 +12,14 @@ public class DeplacementJoueur : MonoBehaviour
     private float gravity = 9.18f, directionY; 
     public Findeniveau fn;
     
-    // Start is called before the first frame update
+    // Start est appellé avnt la premiére mise à jour des frames 
     void Start()
     {
         cc = GetComponent<CharacterController>();
         Application.targetFrameRate = 60;
     }
 
-    // Update is called once per frame
+    // Update est appellé une fois par frame 
     void Update()
     {
 
