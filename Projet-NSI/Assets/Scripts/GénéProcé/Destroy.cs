@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Destroy : MonoBehaviour
 {
-    public int lifeTime = 10;
+    private int lifeTime = 100;
 
    void Start()
    {
