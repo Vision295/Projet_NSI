@@ -1,8 +1,8 @@
-using UnityEngine; 
-using UnityEngine.SceneManagement; // permet de charger une scène à partir de la scène actuelle
+using UnityEngine; // permet d'utiliser des fonctions simples
+using UnityEngine.SceneManagement; // permet de changer de scène 
 public class parametre : MonoBehaviour
 {
-        [SerializeField] 
+        [SerializeField] // oblige Unity à créer une file privée
 
         Transform UIPanel; // fait appel à la classe UnityEngine pour connaître la position, la rotation et la taille du panel     
     void Start()
