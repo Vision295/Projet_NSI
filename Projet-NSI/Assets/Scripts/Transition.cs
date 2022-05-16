@@ -28,8 +28,6 @@ public class Transition : MonoBehaviour
 
     public void Niveauinfini()
     {
-        SceneManager.LoadScene("Niveau infini"); // charge la scène du niveau infini
-    }   
-
-
+        SceneManager.LoadScene("NiveauInfini"); // charge la scène du niveau infini
+    }
 }
