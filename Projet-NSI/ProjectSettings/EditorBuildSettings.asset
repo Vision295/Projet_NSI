@@ -29,4 +29,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Niveaux/Niveau0.unity
     guid: 12cb7fd13af42674eb7ee2b838bcbaaf
+  - enabled: 1
+    path: Assets/Scenes/Niveaux/NiveauInfini.unity
+    guid: dc62a8e3ad2610241a1f9a7ad1b9a87b
   m_configObjects: {}
