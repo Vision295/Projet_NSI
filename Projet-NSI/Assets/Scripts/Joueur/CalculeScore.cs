@@ -6,7 +6,7 @@ public class CalculeScore : MonoBehaviour
 {
     public int score = 0; // creation d'une variable score 
     public float endDelay = 10.0f; // creation d'une variable pour le temps 
-    public int epreuve; // 
+    public int epreuve; 
 
     // variable contenant le script de déplacement du joueur
     public DeplacementJoueur DJ;

@@ -8,7 +8,7 @@ public class CollisionJoueur : MonoBehaviour
     public bool collision;
     public bool finish = false;
 
-    // contr�le le joueur
+    // contrôle le joueur
     public CharacterController cc;
 
     void Start()

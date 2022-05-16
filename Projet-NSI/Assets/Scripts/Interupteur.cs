@@ -6,16 +6,16 @@ public class Interupteur : MonoBehaviour
 {
     public GameObject pf;
     private bool isActive;
-    void OnTriggerEnter(Collider other)
+    void OnTriggerEnter(Collider other) // entrer en collision avec un objet 
     {
-        if(other.tag == "Player")
+        if(other.tag == "Player") // le tag doit être Player
         {
-            pf.GetComponent<MontePF>().enabled = isActive;
+            pf.GetComponent<MontePF>().enabled = isActive;  
         }
     }
-    void OnTriggerExit(Collider other)
+    void OnTriggerExit(Collider other) // fin de la collision avec l'objet 
     {
-        if(other.tag == "Player")
+        if(other.tag == "Player") // tout ce qui posséde le tag Player serat désactiver 
         {
             isActive = !isActive;
         }
