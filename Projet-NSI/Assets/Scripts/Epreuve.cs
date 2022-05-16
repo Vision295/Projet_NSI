@@ -19,9 +19,9 @@ public class Epreuve : MonoBehaviour
     {
         if(other.gameObject.tag == "Player" && gameObject.tag != "Done")
         {
+            cs.epreuve += 1;
             mesh.material = survole;
             gameObject.transform.tag = "Done";
-            cs.epreuve += 1;
         }
     }
 }
