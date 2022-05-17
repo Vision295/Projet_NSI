@@ -32,4 +32,31 @@ public class MainManager : MonoBehaviour
         // méthode pour sélectionner le skin
         activeSkin = objet.transform.name;
     }
+
+    public void ChangeSound(GameObject sound, GameObject son, GameObject sonCoupe)
+    {
+        if(sound.GetComponent<AudioSource>().volume == 0)
+        {
+            sound.GetComponent<AudioSource>().volume = 1;
+            foreach (Transform child in son.transform)
+            {
+                child.GetComponent<Renderer>().enabled = false;
+            }
+            foreach (Transform child in sonCoupe.transform)
+            {
+                child.GetComponent<Renderer>().enabled = true;
+            }
+        } else {
+            sound.GetComponent<AudioSource>().volume = 0;
+            foreach (Transform child in son.transform)
+            {
+                child.GetComponent<Renderer>().enabled = true;
+            }
+            foreach (Transform child in sonCoupe.transform)
+            {
+                child.GetComponent<Renderer>().enabled = false;
+            }
+        }
+    }
+
 }

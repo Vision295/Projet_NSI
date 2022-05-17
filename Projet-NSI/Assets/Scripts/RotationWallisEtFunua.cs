@@ -9,6 +9,7 @@ public class RotationWallisEtFunua : MonoBehaviour
     script dans les objets robolaby et futuna
     script utilisée pour faire tourner les différents skins lors de la séléction 
     */
+    public MainManager MM;
      void Update()
     {
         transform.Rotate(0, 3, 0);
