@@ -30,4 +30,14 @@ public class Transition : MonoBehaviour
     {
         SceneManager.LoadScene("NiveauInfini"); // charge la scène du niveau infini
     }
+
+    public static void Hover(GameObject objet)
+    {
+        objet.transform.localScale = new Vector3(1.25f, 1.25f, 1.25f);
+    }
+
+    public static void Unhover(GameObject objet)
+    {
+        objet.transform.localScale = new Vector3(1, 1, 1);
+    }
 }

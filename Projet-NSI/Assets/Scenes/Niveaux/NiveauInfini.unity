@@ -616,7 +616,7 @@ PrefabInstance:
       objectReference: {fileID: 554960302}
     - target: {fileID: 6561383764368604842, guid: dfd736d60679e4143a52cd751368cb67, type: 3}
       propertyPath: m_Name
-      value: robolaby 1
+      value: robolaby
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8916074478461769446, guid: dfd736d60679e4143a52cd751368cb67, type: 3}
@@ -1012,7 +1012,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 631904175}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -13.099793}
+  m_LocalPosition: {x: 0, y: 0, z: -13.1}
   m_LocalScale: {x: 0.37511542, y: 0.37511554, z: 0.37511545}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -1021,7 +1021,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -65.1, y: 123.80057}
+  m_AnchoredPosition: {x: -77.2, y: 123.80057}
   m_SizeDelta: {x: 175, y: 75}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &722282755
@@ -1639,7 +1639,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e537e1131e6c1c42abf983077466d1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lifeTime: 10
 --- !u!1001 &1024589648
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3598,7 +3597,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5d80ba8c69359ca4bbb84da383b1a047, type: 3}
       propertyPath: m_LocalScale.x
-      value: 127.499954
+      value: 162.3
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5d80ba8c69359ca4bbb84da383b1a047, type: 3}
       propertyPath: m_LocalScale.y
@@ -3650,7 +3649,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5d80ba8c69359ca4bbb84da383b1a047, type: 3}
       propertyPath: m_ConstrainProportionsScale
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -6093592463355912122, guid: 5d80ba8c69359ca4bbb84da383b1a047, type: 3}
       propertyPath: m_ReceiveShadows
