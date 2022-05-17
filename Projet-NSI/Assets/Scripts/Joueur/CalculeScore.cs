@@ -35,6 +35,10 @@ public class CalculeScore : MonoBehaviour
             // met fin au bonus au bon d'un certain temps
             Invoke("SpeedBonusEnd", endDelay);
         }
+        if (other.tag == "Key")
+        {
+            epreuve = 11;
+        }
     }
 
     void SpeedBonusEnd()
