@@ -19,6 +19,7 @@ TagManager:
   - MenuBoutton
   - Obstacle
   - Marteau
+  - Key
   layers:
   - Default
   - TransparentFX
