@@ -9,6 +9,7 @@ public class MainManager : MonoBehaviour
 
     // skin séléctionné
     public string activeSkin;
+    public bool son;
 
     void Start()
     {
@@ -33,30 +34,16 @@ public class MainManager : MonoBehaviour
         activeSkin = objet.transform.name;
     }
 
-    public void ChangeSound(GameObject sound, GameObject son, GameObject sonCoupe)
+    public void ChangeSound(GameObject objet)
     {
-        if(sound.GetComponent<AudioSource>().volume == 0)
+        if (objet.GetComponent<AudioSource>().volume == 0)
         {
-            sound.GetComponent<AudioSource>().volume = 1;
-            foreach (Transform child in son.transform)
-            {
-                child.GetComponent<Renderer>().enabled = false;
-            }
-            foreach (Transform child in sonCoupe.transform)
-            {
-                child.GetComponent<Renderer>().enabled = true;
-            }
-        } else {
-            sound.GetComponent<AudioSource>().volume = 0;
-            foreach (Transform child in son.transform)
-            {
-                child.GetComponent<Renderer>().enabled = true;
-            }
-            foreach (Transform child in sonCoupe.transform)
-            {
-                child.GetComponent<Renderer>().enabled = false;
-            }
+            son = true;
+            objet.GetComponent<AudioSource>().volume = 1;
+        } else 
+        {
+            son = false;
+            objet.GetComponent<AudioSource>().volume = 0;
         }
     }
-
 }

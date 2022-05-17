@@ -190,6 +190,16 @@ MonoBehaviour:
   m_FirstSelected: {fileID: 0}
   m_sendNavigationEvents: 1
   m_DragThreshold: 10
+--- !u!1 &194995218 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: addf0b8fb71134f4a9ab01b04e9c8cb7, type: 3}
+  m_PrefabInstance: {fileID: 1659860679}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &263672942 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 9608440c06a512f49b44a8070f2403e8, type: 3}
+  m_PrefabInstance: {fileID: 1890082875}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &348205114
 GameObject:
   m_ObjectHideFlags: 0
@@ -365,13 +375,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 997307367}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 1
+      - m_Target: {fileID: 997307368}
+        m_TargetAssemblyTypeName: MainManager, Assembly-CSharp
+        m_MethodName: ChangeSound
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgument: {fileID: 997307367}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -1035,6 +1045,19 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 9608440c06a512f49b44a8070f2403e8, type: 3}
   m_PrefabInstance: {fileID: 1890082875}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &676516395
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 263672942}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2cd090d265a4ef4ab9ecacc76173901, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MM: {fileID: 997307368}
 --- !u!1 &715591666 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 0f0e2888a322fd94ab23a65e27721013, type: 3}
@@ -1153,6 +1176,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   activeSkin: 
+  son: 1
 --- !u!4 &997307369
 Transform:
   m_ObjectHideFlags: 0
@@ -2006,6 +2030,19 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: addf0b8fb71134f4a9ab01b04e9c8cb7, type: 3}
   m_PrefabInstance: {fileID: 1659860679}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1530828437
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 194995218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2cd090d265a4ef4ab9ecacc76173901, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MM: {fileID: 997307368}
 --- !u!1001 &1659860679
 PrefabInstance:
   m_ObjectHideFlags: 0
