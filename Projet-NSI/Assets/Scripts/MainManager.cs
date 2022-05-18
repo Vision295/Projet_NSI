@@ -34,16 +34,14 @@ public class MainManager : MonoBehaviour
         activeSkin = objet.transform.name;
     }
 
-    public void ChangeSound(GameObject objet)
+    void Update()
     {
-        if (objet.GetComponent<AudioSource>().volume == 0)
+        if(son)
         {
-            son = true;
-            objet.GetComponent<AudioSource>().volume = 1;
+            GetComponent<AudioSource>().volume = 1;
         } else 
         {
-            son = false;
-            objet.GetComponent<AudioSource>().volume = 0;
+            GetComponent<AudioSource>().volume = 0;
         }
     }
 }

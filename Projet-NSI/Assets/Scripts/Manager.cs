@@ -153,4 +153,15 @@ public class Manager : MonoBehaviour
         objet.transform.Find("Spot Light").GetComponent<Light>().intensity = 100;
         objet.GetComponent<RotationWallisEtFunua>().enabled = true;
     }
+
+    public void ChangeSound()
+    {
+        if (MainManager.Instance.son)
+        {
+            MainManager.Instance.son = false;
+        } else 
+        {
+            MainManager.Instance.son = true;
+        }
+    }
 }
