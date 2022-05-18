@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 3088865221050735317}
   - component: {fileID: 2121759580622329200}
   - component: {fileID: 4221832529530216890}
-  - component: {fileID: 3267189940379544826}
   - component: {fileID: 3267189940379544824}
   - component: {fileID: 3267189940379544825}
+  - component: {fileID: 3971007851968830816}
   m_Layer: 0
   m_Name: etoile1
   m_TagString: BonusScore
@@ -86,20 +86,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &3267189940379544826
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2420132986767392879}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -4404500198620193246, guid: c104f7f680f9f5b4095e74a4d5455033, type: 3}
 --- !u!114 &3267189940379544824
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -125,3 +111,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotationSpeed: 25
+--- !u!135 &3971007851968830816
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2420132986767392879}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.0075
+  m_Center: {x: 0, y: 0, z: 0}
