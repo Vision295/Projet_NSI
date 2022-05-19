@@ -44,7 +44,7 @@ public class CalculeScore : MonoBehaviour
 
     void SpeedBonusEnd()
     {
-        DJ.speed[0] /= 2; // divise la vitesse du joueur par 2
+        DJ.speed[0] /= acceleration; // divise la vitesse du joueur par l'accélération
     }
 
     void Update()
