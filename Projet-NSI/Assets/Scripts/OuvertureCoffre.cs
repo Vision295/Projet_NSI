@@ -5,9 +5,12 @@ using UnityEngine;
 public class OuvertureCoffre : MonoBehaviour
 {
     public CalculeScore cs;
+
+    // objets modifiés par cette fonction
     public GameObject closeChest;
     public GameObject openChest;
     public GameObject gateKey;
+    public GameObject arrowGroup;
 
     // Start is called before the first frame update
     void Start()
@@ -30,6 +33,11 @@ public class OuvertureCoffre : MonoBehaviour
             closeChest.SetActive(false);
             openChest.SetActive(true);
             gateKey.SetActive(true);
+
+            foreach (Transform child in transform)
+            {
+                child.transform.Rotate(new Vector3(0, 180, 0));
+            }
         }
     }
 }
