@@ -5026,7 +5026,7 @@ PrefabInstance:
       objectReference: {fileID: 1983286578}
     - target: {fileID: 6561383764368604842, guid: dfd736d60679e4143a52cd751368cb67, type: 3}
       propertyPath: m_Name
-      value: robolaby 1
+      value: robolaby
       objectReference: {fileID: 0}
     - target: {fileID: 8916074478461769446, guid: dfd736d60679e4143a52cd751368cb67, type: 3}
       propertyPath: offsetY
