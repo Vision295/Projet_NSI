@@ -78,6 +78,11 @@ public class Manager : MonoBehaviour
         
         Application.Quit();
     }
+
+    public void EcranPrincipal()
+    {
+        SceneManager.LoadScene("Niveau0");
+    }
     public void Restart()
     {
         Time.timeScale = 1f;
