@@ -7,13 +7,12 @@ public class PopManager : MonoBehaviour
     // liste des plateformes
     public GameObject[] listePF;
     
-    // position de la première plateforme à apparaitre
+    // position de la première plateforme
     public float positionX = 95;
     public float positionY = 60;
     public float positionZ = 6;
 
     // décalage entre les plateformes générées
-    public float ecartZ = 10;
     public int PFIndex;
     
     public DeplacementJoueur DJ;
