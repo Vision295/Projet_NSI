@@ -7,6 +7,7 @@ public class CalculeScore : MonoBehaviour
     public int score = 0; // creation d'une variable score 
     public float endDelay = 10.0f; // creation d'une variable pour le temps 
     public int epreuve; 
+    public float acceleration = 1.5f;
 
     // variable contenant le script de déplacement du joueur
     public DeplacementJoueur DJ;
@@ -31,7 +32,7 @@ public class CalculeScore : MonoBehaviour
         // si c'est un bonus de vitesse
         if (other.tag == "BonusVitesse")
         {
-            DJ.speed[0] *= 2;
+            DJ.speed[0] *= acceleration;
             // met fin au bonus au bon d'un certain temps
             Invoke("SpeedBonusEnd", endDelay);
         }
