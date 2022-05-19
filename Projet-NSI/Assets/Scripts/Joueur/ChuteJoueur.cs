@@ -23,7 +23,7 @@ public class ChuteJoueur : MonoBehaviour
         // si le joueur chute
         if(transform.position.y < offsetY)
         {
-            Respawning();
+            Invoke("Respawning", 0.25f);
         }
     }
 
