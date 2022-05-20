@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class Destroy : MonoBehaviour
 {
-    private int lifeTime = 10;
+    private int lifeTime = 15;
 
    void Start()
    {
-        for (int i = 40; i < 50; i+=1)
+        for (int i = 65; i < 75; i+=1)
         {
             Invoke("Hide", i/5f);
             Invoke("Display", i/5f + 0.1f);
