@@ -21,6 +21,7 @@ public class PopManager : MonoBehaviour
     void Start()
     {
         DJ = GetComponent<DeplacementJoueur>();
+        PopRandomPF();
     }
 
     // Update is called once per frame
