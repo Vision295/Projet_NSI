@@ -1702,23 +1702,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 836cbedc1e2029747bb7eb221ccda93a, type: 3}
       propertyPath: m_LocalScale.y
-      value: 4733.8135
+      value: 4733.814
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 836cbedc1e2029747bb7eb221ccda93a, type: 3}
       propertyPath: m_LocalScale.z
-      value: 4.733753
+      value: 4.7337537
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 836cbedc1e2029747bb7eb221ccda93a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 40.399574
+      value: 37.808872
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 836cbedc1e2029747bb7eb221ccda93a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -31.955711
+      value: -38.557896
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 836cbedc1e2029747bb7eb221ccda93a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 11.58186
+      value: 11.535132
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 836cbedc1e2029747bb7eb221ccda93a, type: 3}
       propertyPath: m_LocalRotation.w
@@ -3378,7 +3378,7 @@ GameObject:
   - component: {fileID: 1626270679}
   - component: {fileID: 1626270678}
   m_Layer: 5
-  m_Name: " d\xE9part - texte"
+  m_Name: "d\xE9part - texte"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3392,7 +3392,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1626270676}
   m_LocalRotation: {x: 0.12278781, y: -0.6963643, z: 0.12278781, w: 0.6963643}
-  m_LocalPosition: {x: 0, y: 0, z: -188.07}
+  m_LocalPosition: {x: 0, y: 0, z: -188.052}
   m_LocalScale: {x: 0.00695, y: 0.0069500003, z: 0.0069499994}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3402,7 +3402,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 85.251, y: 72.228}
+  m_AnchoredPosition: {x: 85.235, y: 72.271}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1626270678
@@ -3425,8 +3425,8 @@ TextMesh:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1626270676}
-  m_Text: " Niveau Infini : \nFaite le plus \ngros score\npossible\nen r\xE9coltant
-    \ndes pi\xE8ces"
+  m_Text: "Niveau Infini :\nFaites le plus\ngros score\npossible\nen r\xE9coltant\nle
+    plus\nde pi\xE8ces"
   m_OffsetZ: 0
   m_CharacterSize: 1
   m_LineSpacing: 1

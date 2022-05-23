@@ -11131,7 +11131,7 @@ GameObject:
   - component: {fileID: 1905334051}
   - component: {fileID: 1905334050}
   m_Layer: 5
-  m_Name: " d\xE9part - texte"
+  m_Name: "d\xE9part - texte"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11179,7 +11179,7 @@ TextMesh:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1905334048}
   m_Text: "Pour r\xE9ussir :\nR\xE9cup\xE9rez \nles 11 cl\xE9s\npour \nd\xE9clencher
-    \nl'arriv\xE9 du \nportail !"
+    \nl'arriv\xE9e du \nportail !"
   m_OffsetZ: 0
   m_CharacterSize: 1
   m_LineSpacing: 1

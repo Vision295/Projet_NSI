@@ -8954,7 +8954,7 @@ GameObject:
   - component: {fileID: 1727576343}
   - component: {fileID: 1727576342}
   m_Layer: 5
-  m_Name: " d\xE9part - texte"
+  m_Name: "d\xE9part - texte"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9001,9 +9001,8 @@ TextMesh:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1727576340}
-  m_Text: "Pour r\xE9ussir :\nR\xE9cup\xE9rez \nla cl\xE9 situ\xE9e \xE0 \nla  fin
-    du niveau. \nPuis, retrouner \nau coffre initial. \nEt enfin, \nretournez \xE0
-    \nl'arriv\xE9"
+  m_Text: "Pour r\xE9ussir :\nR\xE9cup\xE9rez\nla cl\xE9 situ\xE9e \xE0\nla fin du
+    niveau.\nPuis, retourner\nau coffre initial.\nEt enfin,\nretournez \xE0\nl'arriv\xE9e"
   m_OffsetZ: 0
   m_CharacterSize: 1
   m_LineSpacing: 1
