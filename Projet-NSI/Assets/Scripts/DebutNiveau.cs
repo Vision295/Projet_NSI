@@ -17,6 +17,7 @@ public class DebutNiveau : MonoBehaviour
         {
             Time.timeScale = 1;
             GetComponent<MeshRenderer>().enabled = false;
+            transform.Find("cadre").GetComponent<MeshRenderer>().enabled = false;
         }
     }
 }
