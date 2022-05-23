@@ -8,9 +8,12 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/Niveaux/Niveau0.unity
+    guid: 12cb7fd13af42674eb7ee2b838bcbaaf
   - enabled: 1
     path: Assets/Scenes/Gui/Fin de niveau.unity
     guid: cfd66a10d43d4c44e8ba97f52bc3ad9c
@@ -26,9 +29,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Niveaux/Niveau3.unity
     guid: 3d7c2d5e11a51a845b52247c67b40efa
-  - enabled: 1
-    path: Assets/Scenes/Niveaux/Niveau0.unity
-    guid: 12cb7fd13af42674eb7ee2b838bcbaaf
   - enabled: 1
     path: Assets/Scenes/Niveaux/NiveauInfini.unity
     guid: dc62a8e3ad2610241a1f9a7ad1b9a87b
