@@ -13,11 +13,14 @@ public class DebutNiveau : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.anyKey)
+        if(GetComponent<MeshRenderer>().enabled)
         {
-            Time.timeScale = 1;
-            GetComponent<MeshRenderer>().enabled = false;
-            transform.Find("cadre").GetComponent<MeshRenderer>().enabled = false;
+            if(Input.anyKey)
+            {
+                Time.timeScale = 1;
+                GetComponent<MeshRenderer>().enabled = false;
+                transform.Find("cadre").GetComponent<MeshRenderer>().enabled = false;
+            }
         }
     }
 }
