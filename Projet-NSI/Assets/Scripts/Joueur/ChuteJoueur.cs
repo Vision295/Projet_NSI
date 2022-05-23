@@ -11,7 +11,6 @@ public class ChuteJoueur : MonoBehaviour
     public float offsetY = 0f;
     // component permettant de gérer les déplacements du joueur
     private CharacterController cc;
-    public float tampon;
 
     void Start()
     {
@@ -22,9 +21,9 @@ public class ChuteJoueur : MonoBehaviour
     void Update()
     {
         // si le joueur chute
-        if(Mathf.Round(transform.position.y) == offsetY)
+        if(transform.position.y < offsetY)
         {
-            Invoke("Respawning", 0.25f);
+            Respawning();
         }
     }
 

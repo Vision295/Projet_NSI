@@ -6839,6 +6839,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: robolaby
       objectReference: {fileID: 0}
+    - target: {fileID: 8916074478461769446, guid: dfd736d60679e4143a52cd751368cb67, type: 3}
+      propertyPath: offsetY
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6497235982097718924, guid: dfd736d60679e4143a52cd751368cb67, type: 3}
     - {fileID: 2563526807609360425, guid: dfd736d60679e4143a52cd751368cb67, type: 3}
