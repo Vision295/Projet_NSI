@@ -10,28 +10,36 @@ public class OuvertureCoffre : MonoBehaviour
     public GameObject closeChest;
     public GameObject openChest;
     public GameObject gateKey;
+    public GameObject fleches1;
+    public GameObject fleches2;
 
     // Start is called before the first frame update
     void Start()
     {
         openChest.SetActive(false);
         gateKey.SetActive(false);
+        fleches2.SetActive(false);
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if (cs.epreuve == 11)
+        {
+            fleches2.SetActive(false);
+            fleches1.SetActive(true);
+        }
     }
 
     void OnTriggerEnter(Collider other)
     {
-        // si le joueur a tout collecté et est passé dans le portail
         if (other.tag == "Player")
         {
             closeChest.SetActive(false);
             openChest.SetActive(true);
             gateKey.SetActive(true);
+            fleches1.SetActive(false);
+            fleches2.SetActive(true);
         }
     }
 }
