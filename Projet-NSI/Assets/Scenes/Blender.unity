@@ -491,6 +491,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   joueur: {fileID: 1268391280}
+  test: 0
 --- !u!1 &59968163 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -4133703932355585839, guid: c903db49eec909b428d535c07a4b6a7c, type: 3}
@@ -3807,11 +3808,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1172618313166578046, guid: bd0057ca7c78f28489c9221758ae6c60, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2
+      value: 19.43
       objectReference: {fileID: 0}
     - target: {fileID: 1172618313166578046, guid: bd0057ca7c78f28489c9221758ae6c60, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -5
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 1172618313166578046, guid: bd0057ca7c78f28489c9221758ae6c60, type: 3}
       propertyPath: m_LocalRotation.w
@@ -3847,7 +3848,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1172618313166578047, guid: bd0057ca7c78f28489c9221758ae6c60, type: 3}
       propertyPath: m_Range
-      value: 100
+      value: 220.41
       objectReference: {fileID: 0}
     - target: {fileID: 1172618313166578047, guid: bd0057ca7c78f28489c9221758ae6c60, type: 3}
       propertyPath: m_Color.b
