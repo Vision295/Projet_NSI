@@ -2,6 +2,7 @@ using UnityEngine;
 using System.Collections; 
 using UnityEngine.UI; 
 using UnityEngine.SceneManagement;
+using UnityEngine.EventSystems;
 
 
 public class Manager : MonoBehaviour 
@@ -43,6 +44,7 @@ public class Manager : MonoBehaviour
         {
             UnPause();
         }
+        EventSystem.current.SetSelectedGameObject(null);
     }
     public void AfficherPause()
     {
