@@ -24,11 +24,7 @@ public class OuvertureCoffre : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (cs.epreuve == 11)
-        {
-            fleches2.SetActive(false);
-            fleches1.SetActive(true);
-        }
+
     }
 
     void OnTriggerEnter(Collider other)
