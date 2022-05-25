@@ -9,7 +9,7 @@ public class MainManager : MonoBehaviour
 
     // skin séléctionné
     public string activeSkin;
-    public bool son;
+    public bool son = true;
 
     void Start()
     {
