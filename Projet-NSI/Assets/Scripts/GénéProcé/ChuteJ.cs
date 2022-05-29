@@ -17,7 +17,7 @@ public class ChuteJ : MonoBehaviour
     }
     void Update()
     {
-        if(transform.position.y < pop.positionY - 10)
+        if(transform.position.y < pop.positionY - 50)
         {
             GameOver();
         }

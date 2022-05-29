@@ -29,7 +29,6 @@ public class Manager : MonoBehaviour
             UIPanel.gameObject.SetActive(false);
         }
         isPaused = false;
-        MainManager.Instance.son = false;
     }
  
     void Update ()
