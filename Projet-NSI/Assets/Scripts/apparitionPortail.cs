@@ -8,12 +8,14 @@ public class apparitionPortail : MonoBehaviour
     // script contenu dans l'objet d'arrivé
     public CalculeScore cs;
     public GameObject portail;
+    public GameObject fleche;
     public Findeniveau fin;
 
     void Start()
     {
         // invisible de base
         portail.SetActive(false);
+        fleche.SetActive(false);
     }
 
     void Update()
@@ -22,6 +24,7 @@ public class apparitionPortail : MonoBehaviour
         if (cs.epreuve == 11)
         {
             portail.SetActive(true);
+            fleche.SetActive(true);
         } 
     }
     
