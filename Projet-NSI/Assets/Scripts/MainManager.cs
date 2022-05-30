@@ -38,7 +38,7 @@ public class MainManager : MonoBehaviour
     {
         if(son)
         {
-            GetComponent<AudioSource>().volume = 1;
+            GetComponent<AudioSource>().volume = 0.35f;
         } else 
         {
             GetComponent<AudioSource>().volume = 0;
